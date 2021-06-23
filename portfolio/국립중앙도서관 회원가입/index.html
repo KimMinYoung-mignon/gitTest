@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국립중앙도서관 회원가입</title>
+    <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="top">
+            <div class="logo">
+                <a href="#"><h1>중앙국립도서관</h1><img src="img/header_logo.gif" alt=""></a>
+            </div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#">자료검색</a></li>
+                    <li><a href="#">디지털컬렉션</a></li>
+                    <li><a href="#">신청참여</a></li>
+                    <li><a href="#">도서관이용</a></li>
+                    <li><a href="#">도서관소개</a></li>
+                </ul>
+            </div>
+            <div class="gnbRight">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">내서재</a></li>
+                    <li><a href="#">바구니</a></li>
+                    <li><a href="#">ENGLISH</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="txt">
+            <div class="txtTop">
+                <ul>
+                    <li class="ico-qrcode"><a href="#"><i class="fa fa-qrcode" aria-hidden="true"></i></a></li>
+                    <li class="ico-scrap"><a href="#"><span class="lnr lnr-star"></span></a></li>
+                    <li class="ico-print"><a href="#"><span class="lnr lnr-printer"></span></a></li>
+                    <li class="ico-send"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="txtMid">
+                <ul>
+                    <li class="home"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><span class="lnr lnr-chevron-right"></span></li>
+                    <li class="mypage"><a href="#">마이페이지</a></li>
+                    <li><span class="lnr lnr-chevron-right"></span></li>
+                    <li class="mypage"><a href="#">회원가입</a></li>
+                </ul>
+                <h2>회원가입</h2>
+
+            </div>
+            <div class="txtBottom">
+                <ul>
+                    <li>01.가입여부 확인<span class="lnr lnr-chevron-right"></span></li>
+                    <li>02.이용약관 동의<span class="lnr lnr-chevron-right"></span></li>
+                    <li><span class="now">03.회원정보 입력</span><span class="lnr lnr-chevron-right"></span></li>
+                    <li>03.회원가입 완료</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contents">
+           <table>
+               <tr>
+                   <th class="th1"><span>이름</span></th>
+                   <td><input type="text" style="width: 410px;  height: 20px"></td>
+               </tr>
+               <tr>
+                    <th class="th2">아이디</th>
+                    <td>
+                        <input type="text" style="width: 410px; height: 20px;">
+                        <a href="#" class="btn">아이디 중복확인</a>
+                        <p>아이디는 4자~12자 이내의 영문과 숫자로 공백 없이 입력하시면 됩니다. 영문 대소문자를 구분하지 않습니다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="th3">비밀번호</th>
+                    <td>
+                        <input type="password" style="width: 410px;  height: 20px">
+                        <p>비밀번호는 영문,숫자, 특수문자(~,!,#,$,%,^,* 등) 1자 이상 조합으로 8자~20자 사이이거나 영문,<br>숫자 1자 이상 조합으로 9자~20자 사이로 공백없이 입력하시면 됩니다. 영문 대소문자를 구분합니다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="th1">비밀번호 확인</th>
+                    <td><input type="password" style="width: 410px;  height: 20px"></td>
+                </tr>
+                <tr>
+                    <th class="th2">생년월일</th>
+                    <td>
+                        <input type="date" style="width: 150px;  height: 20px">
+                        <p>주민등록번호와 일치되는 생년월일을 입력하세요.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="th3">연락처</th>
+                    <td>
+                        <select name="phonnum" style="width: 124px;  height: 20px">
+                            <option>선택</option>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>019</option>
+                        </select>  -  <input type="tel" style="width: 127px;  height: 20px">  -  <input type="tel"  style="width: 127px;  height: 20px">
+                        <p>예약확인 및 로그인 관련 정보를 SMS로 전송합니다</p>
+                        <span><input type="checkbox">국립중앙도서관 홍보용 문자 수신여부 (알림톡 포함)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="th1">이메일</th>
+                    <td><input type="text" style="width: 410px;  height: 20px"></td>
+                </tr>
+           </table>
+        </section>
+        <section class="next">
+            <h2><a href="#">이전</a></h2>
+            <h2><a href="#">다음</a></h2>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+body {font-family: 'Do Hyeon', sans-serif;  color: #333; margin: 5% 10%; line-height: 50px; }
+
+img {float: left; margin-right: 55px;}
+header { width: 100%; height: 158px; margin: 0 auto; overflow: hidden;}
+header ul {width: 100%; height: auto;font-size: 25px;}
+header ul li {float: left; margin-right: 5%; margin-bottom: 5%;line-height: 158px; text-align: center;}
+header ul .p03 {color: #b50938;}
+
+.contents {width: 100%; margin: 0 auto; overflow: hidden;background-color: #f8f8f8; border: 2px solid black; background: red;} 
+.contents .cBox {float: left;}
+.import {color: #b50938; padding-right: 5px;}
+.contents h3 {margin-bottom: 1%; font-size: 23px;}
+.contents .addT {font-style: 8px;}
+input {margin-left: 20px;}
+.contents a {float: right; font-size: 20px; margin-right: 3%; }
+.butto{margin-right: 10%; margin-top: 20px;}
+.IDcheck {margin-left: 20px;}
+/* .p01 >h3{border-top: blue solid 2px;} */

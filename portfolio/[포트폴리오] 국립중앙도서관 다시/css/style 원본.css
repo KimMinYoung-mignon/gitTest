@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR&family=Song+Myung&display=swap');
+
+
+:root{
+    /* Color */
+    --white-color: #ffffff;
+    --black-color: #312e41;
+    --gray-color: #f5f5f5;
+    --lightgray-color: #f8f8f8;
+
+    /* Font-size */
+    --font-largest: 36px;
+    --font-large: 20px;
+    --font-midium: 18px;
+    --font-small: 14px;
+    --font-micro: 12px;
+
+    /* font-Famliy */
+    --basicFont: 'Noto Sans KR', sans-serif;
+    --contentsMainFont: 'Nanum Myeongjo', serif;
+
+    /* Size */
+    --contentFontPadding: 35px 0 0 30px
+}
+
+
+/* reset */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+
+/* layout */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+  
+}
+
+.wrap {
+    width: 100%; 
+    overflow: hidden;
+}
+
+/* head */
+.head {
+    width: 1280px; 
+    margin: 0 auto;  
+}
+
+.head .innerhead-top {
+    width: 100%;
+    overflow: hidden;
+    background: var(--gray-color)
+}
+
+.head .innerhead-top ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head .innerhead-top li {
+    margin-right: 15px; 
+    padding: 5px 0;
+    font-size: var(--font-micro);
+}
+
+.head .innerhead-top li:nth-child(5) {
+    margin-right: 0;
+}
+
+.head .innerhead-middle { 
+    overflow:hidden;
+    position: relative;
+    border-bottom: 7px solid var(--gray-color);
+}
+
+.head .innerhead-middle h1 {
+    width: 100px; 
+    height: 65px; 
+    background: url(../img/header_logo.gif) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin-top: 8px;
+}
+
+.head .innerhead-middle h1 a {
+    display: block;
+    height: 100%;
+}
+
+.head .innerhead-middle .right ul {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.head .innerhead-middle .right ul li {
+    margin-right: 6px;
+}
+
+
+.head .innerhead-middle .right ul li a {
+    display: block;
+    height: 100%;
+}
+
+
+.head .innerhead-middle .right ul li.insta {
+    background: url(../img/sns1.gif) no-repeat;
+    width: 26px;
+    height: 26px;
+    text-indent: -9999px;
+ }
+
+.head .innerhead-middle .right ul li.band {
+    background: url(../img/sns2.gif) no-repeat;
+    width: 26px;
+    height: 26px;
+    text-indent: -9999px;
+ }
+
+ .head .innerhead-middle .right ul li.facebook {
+    background: url(../img/sns3.gif) no-repeat;
+    width: 26px;
+    height: 26px;
+    text-indent: -9999px;
+ }
+
+ .head .innerhead-middle .right ul li.twitter {
+    background: url(../img/sns4.gif) no-repeat;
+    width: 26px;
+    height: 26px;
+    text-indent: -9999px;
+ }
+
+ .head .innerhead-middle .right ul li.youtube {
+    background: url(../img/sns5.gif) no-repeat;
+    width: 26px;
+    height: 26px;
+    text-indent: -9999px;
+ }
+
+ .head .innerhead-middle .right ul p {
+    background: url(../img/header_20.gif) no-repeat;
+    width: 147px;
+    height: 35px;
+    text-indent: -9999px;
+    margin-left: 10px;
+ }
+
+ .head .innerhead-bottom ul {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .head .innerhead-bottom ul li {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: var(--font-large);
+    margin: 15px 0;
+ }
+
+.mainIMG {
+    background: url(../img/mainCenter.jpg);
+    width: 100% ;
+    height: 510px;
+ }
+
+.mainIMG .txt {
+    height: 497px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 210px;
+    color: var(--white-color);
+ }
+
+ .mainIMG .txt p {
+     margin-bottom: 14px;
+ }
+
+
+/* searching */
+
+.searching {
+    width: 1280px; 
+    margin: 0 auto;  
+    overflow: hidden;
+}
+
+.searching .search {
+    margin: 40px 0;
+    overflow: hidden;
+    font-size: var(--font-midium);
+    border-bottom: 4px solid black;
+    display: flex;
+}
+
+.searching .search .searchLeft input {
+    margin-right: 5px;
+}
+
+.searching .search .searchLeft label {
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.searching .search .searchRight {
+    display: flex;
+    align-items: baseline;
+}
+
+.searching .search .searchRight a {
+    display: block;
+    height: 100%;
+}
+
+
+.searching .search .searchRight .searchBox {
+    width: 950px;
+    height: 35px;
+}
+
+.searching .search .searchRight p {
+    width: 15px;
+    height: 15px;
+    background: url(../img/search.png) no-repeat;
+    text-indent: -9999px;
+    margin-left: 15px;
+}
+
+
+.searching .search .searchRight button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button, button:focus {
+    cursor: pointer;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 20%;
+    background: var(--white-color);
+    font-size: var(--font-small);
+}
+
+.searching .fastmenu li{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5.8%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.searching .fastmenu li:nth-child(8) {
+    margin-right: 0;
+}
+
+.searching .fastmenu img {
+    width: 80px;
+    height: 78px;
+    margin-bottom: 10px;
+}
+
+.contents {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.contents h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: var(--font-largest);
+    margin-bottom: 40px;
+}
+
+.contents .txt {
+    padding: var(--contentFontPadding);
+}
+
+.contents .news {
+    width: 1280px;
+    height: 400px;
+    background: var(--lightgray-color);
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.contents .news .txt {
+    flex-basis: 20%;
+}
+
+.contents .news .txt p {
+    line-height: 1.5;
+}
+
+.contents .news .newsIMG {
+    flex-basis: 80%;
+    margin-top: 22px;
+}
+
+.contents .news .newsIMG .top-img {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.contents .news .newsIMG .bottom-img {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* book */
+.contents .book {
+    width: 1280px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    margin-bottom: 35px;
+    background: white;
+}
+
+.contents .book .txt {
+    display: flex;
+}
+
+
+.contents .book .txt .bookTxt {
+    line-height: 1.7;
+    margin-left: 30px;
+}
+
+.contents .bookIMG .innerbookIMG {
+    position: absolute;
+    right: 65px;
+    bottom: 35px;
+    display: flex;
+    align-items: baseline;
+}
+
+.contents .bookIMG .innerbookIMG li{
+    margin-right: 50px;
+}
+
+.contents .bookIMG .innerbookIMG img {
+    width: 160px;
+    height: 220px;
+}
+
+.contents .bookIMG .innerbookIMG .bookBig {
+    width: 220px;
+    height: 320px;
+}
+
+/* education */
+
+.contents .education {
+width: 1280px;
+height: 400px;
+background: var(--lightgray-color);
+display: flex;
+margin-bottom: 35px;
+}
+
+
+.contents .education .txt{
+    flex-basis: 20%;
+}
+
+.contents .education .txt p {
+    line-height: 1.5;
+}
+
+.contents .education .education-img ul{
+    display: flex;
+}
+
+.contents .education .education-img li {
+    margin-top: 38px;
+    margin-right: 40px;
+    width: 300px;
+    height: 325px;
+}
+
+
+.contents .service {
+    width: 1280px;
+    height: 400px;
+    display: flex;
+}
+
+.service .txt {
+    flex-basis: 25%;
+}
+
+.service .txt li {
+    line-height: 2.5;
+    font-size: var(--font-midium);
+}
+
+.service .service-menu {
+    display: flex;
+    line-height: 3.5;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.service .service-menu {
+    flex-basis: 100%;
+}
+
+.service .service-menu .service-menu-left {
+    flex-basis: 40%;
+}
+
+.service .service-menu .service-menu-mid {
+    flex-basis: 32%;
+}
+
+.service .service-menu .service-menu-right {
+    flex-basis: 27%;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    background: var(--black-color);
+    color: var(--white-color);
+    font-size: var(--font-micro);
+}
+
+
+.footer .footercontents {
+    width: 1280px;
+    height: 411px;
+    margin: 0 auto;
+}
+
+.footer .footercontents .familySite {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 105px;
+    margin-bottom: 82px;
+}
+
+.footer .footercontents .term {
+    display: flex;
+}
+
+.footer .footercontents .term li {
+    margin-right: 63px;
+}
+
+.footer .footercontents .contack {
+    display: flex;
+    margin-top: 25px;
+
+}
+
+.footer .footercontents .contack  li {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
