@@ -265,13 +265,13 @@ body {
 .page-login img {
     width: 96px;
     height: 96px;
-    margin: 60px 28px 30px 0;
+    margin: 60px 28px 40px 0;
 }
 
 
 
 .page-login .login-text p {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     margin-top: 30px;
 }
 
@@ -306,17 +306,38 @@ body {
     margin-left: 23px;
 }
 
-.login-Form h2 {
-    margin-left: 25px;
-    color: var(--black-color);
+
+
+.login-Form fieldset {
+    border: none;
+    display: flex;
 }
 
-.login-Form h2:hover {
-    border-bottom: 2px solid #403d59;
+.login-Form fieldset .label_pwd {
+    margin-right: -15px;
+}
+
+.login-Form button {
+    color: var(--black-color);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+}
+
+
+.login-Form fieldset .loginbtn {
+    margin: 15px 0 0 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-Form p .loginbtn:hover {
+    border-bottom: 3px solid #403d59;
 }
 
 .btn-login {
-    margin-top: 45px;
+    margin-top: 40px;
     justify-content: center;
     display: flex;
 }
