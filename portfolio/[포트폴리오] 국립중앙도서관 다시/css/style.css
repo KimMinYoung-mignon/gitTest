@@ -301,7 +301,7 @@ button, button:focus {
 
 .searching .fastmenu li:hover{
     /* border-bottom: 3px solid rgb(101, 101, 101); */
-    transition: .25s;
+    /* transition: .25s; */
     color: rgb(101, 101, 101);
 }
 
@@ -353,10 +353,16 @@ button, button:focus {
     margin-top: 22px;
 }
 
+.contents .news .newsIMG img:hover{
+    box-shadow: 0 0 10px 8px rgb(179, 179, 179);
+    transition: 0.8s;
+}
+
 .contents .news .newsIMG .top-img {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 10px;
+
 }
 
 .contents .news .newsIMG .bottom-img {
@@ -419,6 +425,11 @@ display: flex;
 margin-bottom: 35px;
 }
 
+
+.contents .education img:hover{
+    box-shadow: 0 0 10px 8px rgb(213, 213, 213);
+    transition: 0.8s;
+}
 
 .contents .education .txt{
     flex-basis: 20%;
