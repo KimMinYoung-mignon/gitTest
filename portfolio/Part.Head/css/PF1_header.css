@@ -11,8 +11,8 @@
 
     /* Font-size */
     --font-largest: 36px;
-    --font-large: 17px;
-    --font-midium: 15px;
+    --font-large: 20px;
+    --font-midium: 18px;
     --font-small: 14px;
     --font-micro: 12px;
 
@@ -122,233 +122,81 @@ body {
     width: 26px;
     height: 26px;
     text-indent: -9999px;
- }
+}
 
 .head .innerhead-middle .right ul li.band {
     background: url(../img/sns2.gif) no-repeat;
     width: 26px;
     height: 26px;
     text-indent: -9999px;
- }
+}
 
 .head .innerhead-middle .right ul li.facebook {
     background: url(../img/sns3.gif) no-repeat;
     width: 26px;
     height: 26px;
     text-indent: -9999px;
- }
+}
 
- .head .innerhead-middle .right ul li.twitter {
+.head .innerhead-middle .right ul li.twitter {
     background: url(../img/sns4.gif) no-repeat;
     width: 26px;
     height: 26px;
     text-indent: -9999px;
- }
+}
 
- .head .innerhead-middle .right ul li.youtube {
+.head .innerhead-middle .right ul li.youtube {
     background: url(../img/sns5.gif) no-repeat;
     width: 26px;
     height: 26px;
     text-indent: -9999px;
- }
+}
 
- .head .innerhead-middle .right ul p {
+.head .innerhead-middle .right ul p {
     background: url(../img/header_20.gif) no-repeat;
     width: 147px;
     height: 35px;
     text-indent: -9999px;
     margin-left: 10px;
- }
+}
 
 .head .innerhead-bottom > ul {
-     display: flex;
-     justify-content: space-around;
-     /* height: 60px; */
-     overflow: hidden;
- }
+    display: flex;
+    justify-content: space-around;
+    /* height: 60px; */
+    overflow: hidden;
+}
 
- .head .innerhead-bottom > li > a {
+.head .innerhead-bottom > li > a {
      display: block;
- }
+}
 
 .head .innerhead-bottom > ul li.TopMenu {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 16px;
     margin: 15px 0;
     /* margin-bottom: 30px; */
- }
+}
 
- /* 서브메뉴 드롭다운 */
+/* 서브메뉴 드롭다운 */
  /* .head .innerhead-bottom > ul:hover ul {
      display: block;
      transition: .3s;
- } */
+} */
 
 
- .head .innerhead-bottom ul.TopMenu-ul .innerTopMenu{
+.head .innerhead-bottom ul.TopMenu-ul .innerTopMenu{
     display: none;
     line-height: 2; 
     font-size: var(--font-micro);
     display: none;
     /* transition: all 1s; */
- }
+}
 
- /* .head .innerhead-bottom ul.TopMenu-ul #slid-down{
- transform: translateY(500px);
+/* .head .innerhead-bottom ul.TopMenu-ul #slid-down{
+transform: translateY(500px);
 } */
 
 .head .innerhead-bottom ul.TopMenu-ul .lstli{
     margin-top: 17px;
 }
-
-.head .mainIMG {
-     background: url(../img/mainIMG.jpg) no-repeat;
-     width: 100%;
-     height: 150px;
-}
-
-.page-contents {
-    width: 1280px;
-    margin: 0 auto;
-}
-
-.page-contents .page-link {
-    margin-top: 15px;
-}
-
-.page-contents .page-link ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.page-contents .page-link ul li {
-    margin-right: 18px;
-    font-size: 24px;
-}
-
-.page-contents .page-link ul li:nth-child(4) {
-     margin-left: 0;
-}
-
-.page-header .nav-location ul{
-    display: flex;
-    margin-bottom: 20px;
-}
-
-
-
-/* page-login */
-
-.page-contents .page-login {
-    width: 800px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.page-contents .page-login .page-login-wrap {
-    width: 410px;
-    margin: 0 auto;
-}
-
-.page-login .login-text {
-    display: flex;
-    align-items: center;
-}
-
-.page-login .login-text .login-t p {
-    font-weight: bold;
-}
-
-.page-login img {
-    width: 96px;
-    height: 96px;
-    margin: 60px 28px 30px 0;
-}
-
-
-
-.page-login .login-text p {
-    margin-bottom: 12px;
-    margin-top: 30px;
-}
-
-.page-login .login-text label {
-    margin-right: 20px;
-    font-size: var(--font-midium);
-}
-
-.page-login .login-text input {
-    margin-right: 5px;
-}
-
-.login-Form {
-    display: flex;
-    align-items: center;
-}
-
-.login-Form input {
-    width: 230px;
-
-}
-
-.login-Form input.idbox {
-    margin-left: 38px;
-}
-
-.login-Form .id {
-    margin-bottom: 13px;
-}
-
-.login-Form input.pwbox {
-    margin-left: 23px;
-}
-
-.login-Form h2 {
-    margin-left: 25px;
-    color: var(--black-color);
-}
-
-.login-Form h2:hover {
-    border-bottom: 2px solid #403d59;
-}
-
-.btn-login {
-    margin-top: 45px;
-    justify-content: center;
-    display: flex;
-}
-
-.btn-login a:hover {
-    color: rgb(133, 133, 133);
-}
-
-.btn-login a {
-    margin-right: 20px;
-    color: var(--black-color);
-    font-size: var(--font-midium);
-    font-weight: bold;
-    margin-bottom: 46px;
-}
-
-.btn-login a:nth-child(3) {
-    margin-right: 0;
-} 
-
-.bottom {
-    width: 800px;
-    margin: 0 auto;
-    margin-bottom: 8%;
-}
-
-.bottom p {
-    line-height: 2;
-}
-
-
-
-
-
-
