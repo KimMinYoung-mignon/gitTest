@@ -1,0 +1,19 @@
+1) add하기 :: 특정 파일 test2.txt 저장 
+(해당 폴더 전체를 저장하고싶으면 git add *)
+
+2) 상태 확인하기 git status
+
+3) commit하기
+git commit –m “메세지 남기기”
+
+4) 히스토리 확인하기
+git log
+
+---git log에서 자꾸 띠리링 에러남---
+
+
+5) 깃 사이트에 업로드하기
+git push origin master
+
+
+깃 사이트 새로고침 하면 업로드 돼 있음
