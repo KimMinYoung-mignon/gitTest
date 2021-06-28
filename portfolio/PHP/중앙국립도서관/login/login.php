@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -44,7 +41,7 @@
         <div class="innerhead-top">
             <ul>
                 <li><a href="#">로그인</a></li>
-                <li><a href="../members/members.php">회원가입</a></li>
+                <li><a href="../members/join_portfolio.php">회원가입</a></li>
                 <li><a href="#">내서재</a></li>
                 <li><a href="#">바구니</a></li>
                 <li><a href="#">English</a></li>
@@ -229,25 +226,6 @@
         });
 
 
-        // $('#Menudrop').click(function(){
-        //    $('.innerTopMenu').addClass('#slid-down');
-        // });
-
-
-/* 서브메뉴 창 나오게....왜 안될까...
-
-        $('#TopMenu').click(function(){
-           $('#TopMenu-ul').stop().slideDown(500);
-        });
-
-
-        $('#TopMenu').click(function(){
-           $('#TopMenu-ul').stop().slideUp(500);
-        });
-
-*/  
-
- 
     </script>
 </body>
 </html>

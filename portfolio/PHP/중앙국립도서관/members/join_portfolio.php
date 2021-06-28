@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/join.css">
 </head>
+
+
 <body>
     <div class="wrap">
        <!-- head -->
@@ -23,7 +25,7 @@
                 </ul>
             </div> 
             <div class="innerhead-middle">
-                <h1><a href="#">국립중앙도서관</a></h1>
+                <h1><a href="../index.php">국립중앙도서관</a></h1>
                 <div class="right">
                     <ul>
                         <li class="insta"><a href="#">인스타그램</a></li>
@@ -149,27 +151,27 @@
                 <fieldset>
                     <legend>회원가입</legend>
                     <p>
-                        <label for="u_name" class="label_txt">이름</label>
+                        <label for="u_name" class="label_txt"><span class="import">* </span>이름</label>
                         <input type="text" name="u_name" id="u_name" class="u_name">
                     </p>
 
                     <p>
-                        <label for="u_id" class="label_txt">아이디</label>
+                        <label for="u_id" class="label_txt"><span class="import">* </span>아이디</label>
                         <input type="text" name="u_id" id="u_id" class="u_id">
                         <button type="button" class="btn_idCheck" onclick="search_id()">아이디 중복확인</button>
                         <br>
-                        <span class="ex_txt">* 아이디는 4자~12자 이내의 영문과 숫자로 공백 없이 입력하시면 됩니다. 영문 대소문자를 구분하지 않습니다.</span>
+                        <span class="ex_txt">아이디는 4자~12자 이내의 영문과 숫자로 공백 없이 입력하시면 됩니다. 영문 대소문자를 구분하지 않습니다.</span>
                     </p>
 
                     <p>
-                        <label for="u_pwd" class="label_txt">비밀번호</label>
+                        <label for="u_pwd" class="label_txt"><span class="import">* </span>비밀번호</label>
                         <input type="password" name="u_pwd" id="u_pwd" class="u_pwd">
                         <br>
-                        <span class="ex_txt">* 비밀번호는 영문,숫자, 특수문자(~,!,#,$,%,^,* 등) 1자 이상 조합으로 8자~20자 사이이거나 영문,<br>숫자 1자 이상 조합으로 9자~20자 사이로 공백없이 입력하시면 됩니다. 영문 대소문자를 구분합니다.</span>
+                        <span class="ex_txt">비밀번호는 영문,숫자, 특수문자(~,!,#,$,%,^,* 등) 1자 이상 조합으로 8자~20자 사이이거나 영문,<br>숫자 1자 이상 조합으로 9자~20자 사이로 공백없이 입력하시면 됩니다. 영문 대소문자를 구분합니다.</span>
                     </p>
 
                     <p>
-                        <label for="re_pwd" class="label_txt">비밀번호 확인</label>
+                        <label for="re_pwd" class="label_txt"><span class="import" >* </span>비밀번호 확인</label>
                         <input type="password" name="re_pwd" id="re_pwd" class="re_pwd">
                     </p>
 
@@ -193,7 +195,7 @@
                     </p>
 
                     <p>
-                        <label for="birth" class="label_txt">생년월일</label>
+                        <label for="birth" class="label_txt"><span class="import">* </span>생년월일</label>
                         <input type="datetime" name="birth" id="birth" class="birth">
                         <br>
                         <span class="ex_txt">ex) 20210608 <br> 주민등록번호와 일치되는 생년월일을 입력하세요.</span>
@@ -219,45 +221,96 @@
             </div>
 
             <div class="joinBTN">
-                <button type="submit" class="btn_subimt">다음</button>
+                <button type="submit" class="btn_subimt"  onclick="chkPW()">다음</button>
                 <button type="button" class="btn_back" onclick="history.back()">이전</button>
             </div>
 
         </form>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script>
-        $('#Menudrop').mouseover(function(){
+
+<script type="text/javascript">
+
+    $('#Menudrop').mouseover(function(){
         $('.innerTopMenu').slideDown(1000);
-        });
+    });
 
-        $('#Menudrop').mouseleave(function(){
-        $('.innerTopMenu').slideUp(1000);
-        });
+    $('#Menudrop').mouseleave(function(){
+    $('.innerTopMenu').slideUp(1000);
+    });
 
+    function form_check(){
+        var u_name = document.getElementById("u_name");
+        var u_id = document.getElementById("u_id");
+        var u_pwd = document.getElementById("u_pwd");
+        var re_pwd = document.getElementById("re_pwd");
+        var agree = document.getElementById("agree");
 
-        // $('#Menudrop').click(function(){
-        //    $('.innerTopMenu').addClass('#slid-down');
-        // });
+        if (!u_name.value) {
+            alert("이름을 입력하세요.");
+            u_name.focus();
+            return false;
+        };
 
+        if (!u_id.value){
+            alert("아이디을 입력하세요.");
+            u_name.focus();
+            return false;
+        };
 
-    /* 서브메뉴 창 나오게....왜 안될까...
+        if (u_id.value.length < 4 || u_id.value.length > 12){
+            alert("아이디는 4자 ~ 12자 이내로 입력해주세요.");
+            u_id.focus();
+            return false;
+        };
 
-        $('#TopMenu').click(function(){
-        $('#TopMenu-ul').stop().slideDown(500);
-        });
+        if(!u_pwd.value){
+            alert("비밀번호를 입력해주세요.");
+            u_pwd.focus();
+            return false;
+        };
 
+            function chkPW(){
+            var pw = $("#u_pwd").val();
+            var num = pw.search(/[0-9]/g);
+            var eng = pw.search(/[a-z]/ig);
+            var spe = pw.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
 
-        $('#TopMenu').click(function(){
-        $('#TopMenu-ul').stop().slideUp(500);
-        });
+            if(pw.length < 8 || pw.length > 20){
 
-    */  
+            alert("8자리 ~ 20자리 이내로 입력해주세요.");
+            return false;
+            }else if(pw.search(/\s/) != -1){
+            alert("비밀번호는 공백 없이 입력해주세요.");
+            return false;
+            }else if(num < 0 || eng < 0 || spe < 0 ){
+            alert("영문,숫자, 특수문자를 혼합하여 입력해주세요.");
+            return false;
+            }else {
+            console.log("통과"); 
+            return true;
+            }
+        };
 
+        if(u_pwd.value != re_pwd.value){
+            alert("비밀번호를 확인해주세요.");
+            re_pwd.focus();
+            return false;
+        };
 
-    </script>
+        if(!agree.checked){
+            alert("약관 동의가 필요합니다.");
+            agree.focus();
+            return false;
+        };
+
+        return true;
+    };
+
+   
+</script>
+
 </body>
 </html>
