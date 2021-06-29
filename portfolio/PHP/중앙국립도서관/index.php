@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -10,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
+
 <body>
     <div class="wrap">
 
@@ -144,7 +143,7 @@
                         <p class="fastmenuTxt">자료 당일신청</p></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/icon_04.gif" alt="">
+                        <a href="reservation/index.php"><img src="img/icon_04.gif" alt="">
                         <p>도서관 방문예약</p></a>
                     </li>
                     <li>
