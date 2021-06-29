@@ -309,7 +309,24 @@
         return true;
     };
 
-   
+    function select_email(){
+            var email_dns = document.getElementById("email_dns");
+            var email_sel = document.getElementById("email_sel");
+
+            var idx = email_sel.options.selectedIndex;
+            var rtn_val = email_sel.options[idx].value;
+
+            email_dns.value = rtn_val;
+        };
+
+        function search_id(){
+            window.open("search_id.php", "sid", "width=600, height=250, left=0, top=0");
+        };
+
+        function search_addr(){
+            window.open("addr_search.html", "addr", "width=500, height=400, left=0, top=0");
+        };
+        
 </script>
 
 </body>
