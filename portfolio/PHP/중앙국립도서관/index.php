@@ -7,11 +7,10 @@
     <title>포트폴리오-국립중앙도서관</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
 </head>
-
 <body>
     <div class="wrap">
-
         <!-- head -->
         <section class="head">
             <div class="innerhead-top">
@@ -36,7 +35,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="innerhead-bottom">
                 <ul id="Menudrop">
                     <li id="TopMenu" class="TopMenu"><a href="#">자료검색</a>
@@ -51,7 +49,6 @@
                             <li class="innerTopMenu"><a href="#">한국고전적종합목록</a></li>
                         </ul>
                     </li>
-
                     <li id="TopMenu" class="TopMenu"><a href="#">디지털컬렉션</a>
                         <ul id="TopMenu-ul" class="TopMenu-ul">
                             <li class="innerTopMenu lstli"><a href="#">주제별 커렉션</a></li>
@@ -64,7 +61,6 @@
                             <li class="innerTopMenu"><a href="#">전시컬렉션(온라인전시)</a></li>
                             <li class="innerTopMenu"><a href="#">세계의 도서관</a></li>
                         </ul>
-
                     <li id="TopMenu" class="TopMenu"><a href="#">신청참여</a>
                         <ul id="TopMenu-ul" class="TopMenu-ul">
                             <li class="innerTopMenu lstli"><a href="#">자료신청안내</a></li>
@@ -96,7 +92,6 @@
                             <li id="innerTopMenu" class="innerTopMenu"><a href="#">분실물찾기</a></li>
                         </ul>
                     </li>
-
                     <li id="TopMenu" class="TopMenu"><a href="#">도서관 소개</a>
                         <ul id="TopMenu-ul" class="TopMenu-ul">
                             <li id="innerTopMenu slid-down" class="innerTopMenu lstli"<a href="#">국립중앙도서관</a></li>
@@ -115,11 +110,48 @@
         </section>
 
         <!-- main IMG -->
-        <div class="mainIMG">
-            <div class="txt">
-                <p>창조적 지식문화강국을 선도하는</p>
-                <h2>국립중앙도서관에 오신걸 환영합니다.</h2>
-            </div>
+        <div class="mainIMG"
+            <section>
+                <ul class="slider">
+                    <li class="sliderLi">
+                        <div class="sliderIMG" style="background-image:url('img/mainCenter.jpg'); height:380px">
+                        <dl class="slidCenter">
+                            <dd>창조적 지식문화강국을 선도하는</dd>
+                            <dt>국립중앙도서관에 오신걸 환영합니다.</dt>
+                        </dl>
+                        </div>
+                    </li>
+                    <li class="sliderLi">
+                        <div class="sliderIMG" style="background-image:url('img/mainCenter3.jpg');height:380px">
+                        
+                        </div>
+                    </li>
+                    <li class="sliderLi">
+                        <div class="sliderIMG" style="background-image:url('img/mainCenter4-1.jpg');height:380px; font-family:'Nanum Myeongjo', serif;">
+                        <dl class="slidRight">
+                            <dd></dd>
+                            <dt>고문헌실 온라인 투어 <br>및 견학 예약하기<br><span class="lnr lnr-arrow-right"></span></dt>
+                        </dl>
+                        </div>
+                    </li>
+                    <li class="sliderLi">
+                        <div class="sliderIMG" style="background-image:url('img/mainCenter6.jpg');height:380px; font-family:'Nanum Myeongjo', serif;">
+                        <dl>
+                            <dt>역사의 기록이 살아 숨쉬는 곳</dt>
+                        </dl>
+                        </div>
+                    </li>
+                    <li class="sliderLi">
+                        <div class="sliderIMG" style="background-image:url('img/mainCenter5.jpg');height:380px ">
+                        </dl>
+                        </div>
+                    </li>
+                    <li class="sliderLi">
+                        <div class="sliderIMG" style="background-image:url('img/mainCenter2-3.jpg');height:380px ">
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </div>
 
         <!-- searching -->
@@ -135,7 +167,6 @@
                     <button>다국어 입력하기</button>
                 </div>
             </div>
-
             <div class="fastmenu">
                 <ul>
                     <li>
@@ -173,7 +204,6 @@
                 </ul>
             </div>
         </section>
-
         <!-- contetns -->
         <section class="contents">
             <div class="news">
@@ -185,7 +215,7 @@
                     <ul class="top-img">
                         <li><a href="#"><img src="img/news (1).gif" alt=""></a></li>
                         <li><a href="#"><img src="img/news (2).gif" alt=""></a></li>
-                        <li><a href="#"><img src="img/news (3).gif" alt=""></a></li>
+                        <li><a href="#"><img src="img/news (3) - 복사본.gif" alt=""></a></li>
                     </ul>
                     <ul class="bottom-img">
                         <li><a href="#"><img src="img/news (4).gif" alt=""></a></li>
@@ -257,7 +287,6 @@
             </div>
         </section>
     </div>
-
         <!-- footer -->
         <section class="footer">
             <div class="footercontents">
@@ -289,36 +318,67 @@
         </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    
     <script>
         $('#Menudrop').mouseover(function(){
            $('.innerTopMenu').slideDown(1000);
         });
-
         $('#Menudrop').mouseleave(function(){
            $('.innerTopMenu').slideUp(1000);
         });
+       
 
-
-        // $('#Menudrop').click(function(){
-        //    $('.innerTopMenu').addClass('#slid-down');
-        // });
-
-
-/* 서브메뉴 창 나오게....왜 안될까...
-
-        $('#TopMenu').click(function(){
-           $('#TopMenu-ul').stop().slideDown(500);
-        });
-
-
-        $('#TopMenu').click(function(){
-           $('#TopMenu-ul').stop().slideUp(500);
-        });
-
-*/  
-
- 
+        $(function(){
+            var $slider = $('.slider'),
+                $firstSlide = $slider.find('li').first() // 첫번째 슬라이드
+                .stop(true).animate({'opacity':1},200); // 첫번째 슬라이드만 보이게 하기
+        
+            function PrevSlide(){ // 이전버튼 함수
+                stopSlide();startSlide(); //타이머 초기화
+                
+                var $lastSlide = $slider.find('li').last() //마지막 슬라이드
+                .prependTo($slider); //마지막 슬라이드를 맨 앞으로 보내기  
+                $secondSlide = $slider.find('li').eq(1)//두 번째 슬라이드 구하기
+                .stop(true).animate({'opacity':0},400); //밀려난 두 번째 슬라이드는 fadeOut 시키고
+                $firstSlide = $slider.find('li').first() //맨 처음 슬라이드 다시 구하기
+                .stop(true).animate({'opacity':1},400);//새로 들어온 첫 번째 슬라이드는 fadeIn 시키기
+            }
+              
+              function NextSlide(){ // 다음 버튼 함수
+              stopSlide();startSlide(); //타이머 초기화
+              $firstSlide = $slider.find('li').first() // 첫 번째 슬라이드
+              .appendTo($slider); // 맨 마지막으로 보내기
+              var $lastSlide = $slider.find('li').last() // 맨 마지막으로 보낸 슬라이드
+              .stop(true).animate({'opacity':0},400); // fadeOut시키기
+              $firstSlide = $slider.find('li').first()// 맨 처음 슬라이드
+              .stop(true).animate({'opacity':1},400);// fadeIn 시키기
+              }
+              
+              $('#next').on('click', function(){ //다음버튼 클릭
+              NextSlide();
+              });
+              $('#prev').on('click', function(){ //이전 버튼 클릭
+              PrevSlide();
+              });
+          
+              startSlide(); // 자동 슬라이드 시작
+              
+              var theInterval;
+          
+              function startSlide() {
+              theInterval = setInterval(NextSlide, 5000); //자동 슬라이드 설정
+              }
+          
+              function stopSlide() { //자동 멈추기
+              clearInterval(theInterval);
+              }
+              
+              $('.slider').hover(function(){ //마우스 오버시 슬라이드 멈춤
+              stopSlide();
+              }, function (){
+              startSlide();
+              });
+          });
     </script>
 </body>
 </html>
