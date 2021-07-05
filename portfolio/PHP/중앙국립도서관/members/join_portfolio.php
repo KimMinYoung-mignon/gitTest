@@ -17,8 +17,8 @@
        <section class="head">
             <div class="innerhead-top">
                 <ul>
-                    <li><a href="login/login.php">로그인</a></li>
-                    <li><a href="members/members.php">회원가입</a></li>
+                    <li><a href="../login/login.php">로그인</a></li>
+                    <li><a href="members/join_portfolio.php">회원가입</a></li>
                     <li><a href="#">내서재</a></li>
                     <li><a href="#">바구니</a></li>
                     <li><a href="#">English</a></li>

@@ -11,7 +11,7 @@ $u_pwd = $_POST["u_pwd"];
 include "../inc/dbcon.php";
 
 // 쿼리 작성
-$sql = "select * from members where u_id='$u_id';";
+$sql = "select * from members where u_id='$u_id' AND u_pwd='$u_pwd'";
 
 
 $result = mysqli_query($dbcon, $sql);

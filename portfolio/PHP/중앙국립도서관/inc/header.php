@@ -15,15 +15,15 @@
         <section class="head">
             <div class="innerhead-top">
                 <ul>
-                    <li><a href="login/login.php">로그인</a></li>
-                    <li><a href="members/members.php">회원가입</a></li>
+                    <li><a href="../login/login.php">로그인</a></li>
+                    <li><a href="../members/join_portfolio.php">회원가입</a></li>
                     <li><a href="#">내서재</a></li>
                     <li><a href="#">바구니</a></li>
                     <li><a href="#">English</a></li>
                 </ul>
             </div> 
             <div class="innerhead-middle">
-                <h1><a href="#">국립중앙도서관</a></h1>
+                <h1><a href="../index.php">국립중앙도서관</a></h1>
                 <div class="right">
                     <ul>
                         <li class="insta"><a href="#">인스타그램</a></li>
