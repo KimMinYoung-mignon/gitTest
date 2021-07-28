@@ -1,0 +1,167 @@
+/* 최대 1025이하 화면 */
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrap {
+    width: 100%; 
+    overflow: visible;
+    position: static;
+}
+
+/* head */
+.head {
+    max-width: 1025px;
+} 
+
+.head .innerhead-top,
+.innerhead-middle .right {
+    display: none;
+}
+
+.head .innerhead-top {
+    width: 0;
+    overflow: visible;
+}
+
+.head .innerhead-top ul {
+    display: ?;
+    justify-content: flex-start;
+}
+
+
+.head .innerhead-top li {
+    margin-right: 0; 
+    padding: 0;
+}
+
+
+.head .innerhead-middle { 
+    border-bottom: 0px;
+}
+
+
+
+
+.head .innerhead-middle .right ul {
+    height: 0px;
+    display: ?;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.head .innerhead-middle .right ul li {
+    margin-right: 0;
+}
+
+.head .innerhead-middle .right ul li a {
+    display: ?;
+}
+
+
+
+/* 여기 다시 시작 */
+
+
+.mobile_button,
+.mobile_search,
+.mobile_menu{
+    display: block;
+    top: 0;
+    right: 0;
+    background: yellow;
+}
+
+.mobile_button {
+    position: absolute;
+}
+
+
+.mobile_button .mobile_search_IMG {
+    width: 6rem;
+    height: 6rem;
+    background: url(../img/m_searching.JPG) no-repeat;
+}
+
+.mobile_inner_search {
+    display: none;
+}
+
+.mobile_inner_search.active {
+    display: block;
+    position: absolute;
+    background: skyblue;
+    top: 0;
+    width: 100%;
+    height:130%
+}
+
+.mobile_inner_search.active h1 {
+    width: 100px; 
+    height: 65px; 
+    background: url(../img/header_logo.gif) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    margin-top: 8px;
+}
+
+.mobile_inner_search.active .m_cancle {
+    background: url(../img/cancle.png);
+    right: 0;
+    display: block;
+}
+
+
+.mobile_button .mobile_menu_IMG {
+    width: 6rem;
+    height: 6rem;
+    background: url(../img/m_menu.JPG) no-repeat;
+}
+
+
+/* 여기 다시 끝 */
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+    width: auto; 
+}
+
+
+.footer .footercontents {
+    width: 100%;
+}
+
+.footer .footercontents .familySite {
+    display: none;
+}
+
+.footer .footercontents .term {
+    display: none;
+}
+
+.footer .footercontents .term li {
+    margin-right: 0px;
+}
+
+.footer .footercontents .contack {
+    margin-top: 25px;
+    background: red;
+}
+
+.footer .footercontents .contack  li {
+    margin-right: 0;
+}
+

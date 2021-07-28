@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사전 방문 예약 페이지</title>
+    <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/visitReser.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- head -->
+        <section class="head">
+            <div class="innerhead-top">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">내서재</a></li>
+                    <li><a href="#">바구니</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div> 
+            <div class="innerhead-middle">
+                <h1><a href="#">국립중앙도서관</a></h1>
+                <div class="right">
+                    <ul>
+                        <li class="insta"><a href="#">인스타그램</a></li>
+                        <li class="band"><a href="#">밴드</a></li>
+                        <li class="facebook"><a href="#">페이스북</a></li>
+                        <li class="twitter"><a href="#">트위터</a></li>
+                        <li class="youtube"><a href="#">유튜브</a></li>
+                        <p>휴무안내</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="innerhead-bottom">
+                <ul id="Menudrop">
+                    <a href="#"><li id="TopMenu" class="TopMenu">자료검색</a>
+                        <ul id="TopMenu-ul" class="TopMenu-ul">
+                            <li class="innerTopMenu lstli"><a href="#">소장자료</a></li>
+                            <li class="innerTopMenu"><a href="#">디지털화 자료</a></li>
+                            <li class="innerTopMenu"><a href="#">Web DB</a></li>
+                            <li class="innerTopMenu"><a href="#">신작자료</a></li>
+                            <li class="innerTopMenu"><a href="#">사서추천 도서</a></li>
+                            <li class="innerTopMenu"><a href="#">영상자료 목록</a></li>
+                            <li class="innerTopMenu"><a href="#">국가자료종합목록</a></li>
+                            <li class="innerTopMenu"><a href="#">한국고전적종합목록</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="TopMenu" class="TopMenu"><a href="#">디지털컬렉션</a>
+                        <ul id="TopMenu-ul" class="TopMenu-ul">
+                            <li class="innerTopMenu lstli"><a href="#">주제별 커렉션</a></li>
+                            <li class="innerTopMenu"><a href="#">대한민국 신문 아카이브</a></li>
+                            <li class="innerTopMenu"><a href="#">관보</a></li>
+                            <li class="innerTopMenu"><a href="#">해외 한국 관련 기록물</a></li>
+                            <li class="innerTopMenu"><a href="#">OAK국가리포지터리</a></li>
+                            <li class="innerTopMenu"><a href="#">오아시스(OASIS)</a></li>
+                            <li class="innerTopMenu"><a href="#">책 읽어주는 도서관</a></li>
+                            <li class="innerTopMenu"><a href="#">전시컬렉션(온라인전시)</a></li>
+                            <li class="innerTopMenu"><a href="#">세계의 도서관</a></li>
+                        </ul>
+
+                    <li id="TopMenu" class="TopMenu"><a href="#">신청참여</a>
+                        <ul id="TopMenu-ul" class="TopMenu-ul">
+                            <li class="innerTopMenu lstli"><a href="#">자료신청안내</a></li>
+                            <li class="innerTopMenu"><a href="#">비치희망도서</a></li>
+                            <li class="innerTopMenu"><a href="#">상호대차</a></li>
+                            <li class="innerTopMenu"><a href="#">책다모아(기증)</a></li>
+                            <li class="innerTopMenu"><a href="#">저작권 이용허락</a></li>
+                            <li class="innerTopMenu"><a href="#">사서에게 물어보세요</a></li>
+                            <li class="innerTopMenu"><a href="#">인문열차,삶을 달리다</a></li>
+                            <li class="innerTopMenu"><a href="#">연구정보서비스</a></li>
+                            <li class="innerTopMenu"><a href="#">견학</a></li>
+                            <li class="innerTopMenu"><a href="#">예약</a></li>
+                            <li class="innerTopMenu"><a href="#">사회봉사</a></li>
+                            <li class="innerTopMenu"><a href="#">교육/문화프로그램</a></li>
+                        </ul>
+                    </li>
+                
+                    <li id="TopMenu" class="TopMenu"><a href="#">도서관 이용</a>
+                        <ul id="TopMenu-ul" class="TopMenu-ul"> 
+                            <li id="innerTopMenu" class="innerTopMenu lstli"><a href="#">집에서 이용하는 도서관</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">본관 이용시간 및 이용증 발급</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">본관 자료실 안내</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">도서관 일정</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">편의시설</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">자료복사</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">전시</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">자주하는 질문</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">설문조사</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">분실물찾기</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="TopMenu" class="TopMenu"><a href="#">도서관 소개</a>
+                        <ul id="TopMenu-ul" class="TopMenu-ul">
+                            <li id="innerTopMenu slid-down" class="innerTopMenu lstli"<a href="#">국립중앙도서관</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">소속도서관</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">도서관 협력망</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">도서관소식</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">발간자료</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">정보공개</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a href="#">관내사이트 안내</a></li>
+                            <li id="innerTopMenu" class="innerTopMenu"><a 
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div> 
+        </section>
+
+        <section class="txt">
+            <div class="txtTop">
+                <ul>
+                    <li class="ico-qrcode"><a href="#"><i class="fa fa-qrcode" aria-hidden="true"></i></a></li>
+                    <li class="ico-scrap"><a href="#"><span class="lnr lnr-star"></span></a></li>
+                    <li class="ico-print"><a href="#"><span class="lnr lnr-printer"></span></a></li>
+                    <li class="ico-send"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="txtMid">
+                <ul>
+                    <li class="home"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><span class="lnr lnr-chevron-right"></span></li>
+                    <li class="mypage"><a href="#">관람 정보</a></li>
+                    <li><span class="lnr lnr-chevron-right"></span></li>
+                    <li class="mypage"><a href="#">예약하기</a></li>
+                    <li class="mypage"><a href="#">상설전시관 관람 예약</a></li>
+                </ul>
+                <h2>방문 사전 예약</h2>
+            </div>
+
+            <div class="txtBottom">
+                <ul>
+                    <li>01. 예약 정보 입력<span class="lnr lnr-chevron-right"></span></li>
+                    <li>02. 예약 완료</li>
+                </ul>
+
+                <div class="timeNotic">
+                    <div class="common">
+                        <strong>예약안내</strong>
+                    </div>
+                    <div class="commonTime">
+                        <span>※ 온라인접수는 서버시간을 기준으로 합니다.</span>
+                        <strong>현재 서버 시간</strong>
+                        <div class="serverTime">
+                            <span id="serverTime1"></span>
+                            <span id="serverTime2"></span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="calendarArea">
+            <h5>관람 정보 선택</h5>
+            <ul class="calendar-choice-box">
+                <li class="calendarArea-calendarBox">
+                    <div class="calendarArea-calendarBox-top">
+                        <div class="cal_bigBox">
+                            <a href="#">이전</a>
+                            <span>2021</span>년 &nbsp;
+                            <span>7월</span>
+                            <a href="#">다음</a>
+                            <table class="leftBox">
+                                <thead >
+                                    <tr>
+                                        <th scope="col">
+                                            <span title="일">일</span>
+                                        </th>
+                                        <th scope="col">
+                                            <span title="월">월</span>
+                                        </th>
+                                        <th scope="col">
+                                            <span title="화">화</span>
+                                        </th>
+                                        <th scope="col">
+                                            <span title="수">수</span>
+                                        </th>
+                                        <th scope="col">
+                                            <span title="목">목</span>
+                                        </th>
+                                        <th scope="col">
+                                            <span title="금">금</span>
+                                        </th>
+                                        <th scope="col">
+                                            <span title="토">토</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td><span>1</span></td>
+                                        <td><span>2</span></td>
+                                        <td><span>3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>4</span></td>
+                                        <td><span>5</span></td>
+                                        <td><span>6</span></td>
+                                        <td><a href="#">7</a></td>
+                                        <td><a href="#">8</a></td>
+                                        <td><a href="#">9</a></td>
+                                        <td><a href="#">10</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">11</a></td>
+                                        <td><a href="#">12</a></td>
+                                        <td><a href="#">13</a></td>
+                                        <td><a href="#">14</a></td>
+                                        <td><a href="#">15</a></td>
+                                        <td><a href="#">16</a></td>
+                                        <td><a href="#">17</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">18</a></td>
+                                        <td><a href="#">19</a></td>
+                                        <td><a href="#">20</a></td>
+                                        <td><a href="#">21</a></td>
+                                        <td><a href="#">22</a></td>
+                                        <td><a href="#">23</a></td>
+                                        <td><a href="#">24</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">25</a></td>
+                                        <td><a href="#">26</a></td>
+                                        <td><a href="#">27</a></td>
+                                        <td><a href="#">28</a></td>
+                                        <td><a href="#">29</a></td>
+                                        <td><a href="#">30</a></td>
+                                        <td><a href="#">31</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                <li class="calendarArea-dateChoice">
+                    <h4 id="current_dateTxt2" class="calendar-tbl-title">2021-07-11(일)</h4>
+                    <table class="tbl-type1 calender">
+                        <colgroup>
+                            <col width="10%">
+                            <col width="30%">
+                            <col width="30%">
+                            <col width="30%">
+                        </colgroup>
+
+                        <thead>
+                            <tr class="tbl-type1-tr">
+                                <th>회차</th>
+                                <th>시간</th>
+                                <th>예약 가능 인원</th>
+                                <th>선택</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td>9:00 - 11:00</td>
+                                <td>접수마감</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="num">2</td>
+                                <td>11:00 - 12:00</td>
+                                <td>접수마감</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="num">3</td>
+                                <td>12:00 - 14:00</td>
+                                <td>56<span>명</span></td>
+                                <td><button>선택</button></td>
+                            </tr>
+                            <tr>
+                                <td class="num">4</td>
+                                <td>14:00 - 16:00</td>
+                                <td>34<span>명</span></td>
+                                <td><button>선택</button></td>
+                            </tr>
+                            <tr>
+                                <td class="num">5</td>
+                                <td>16:00 - 18:00</td>
+                                <td>40<span>명</span></td>
+                                <td><button>선택</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </section>
+
+        <section class="reserve">
+            <div class="reserve-wrap">
+                <div class="textReserve">
+                    <h5>예약 정보 입력</h5>
+                    <p><span class="import">*</span>표시 항목은 필수 입력 사항입니다.</p>
+                </div>
+                <ul>
+                    <div>
+                        <ul>
+                            <li class="first">
+                                <div class="first-box-wrap">
+                                    <div class="first-box-step1">
+                                        <h4><span class="import">*</span> 관람 인원 입력</h4>
+                                        <ul class="input-list">
+                                            <li>
+                                                <span class="importTxt">•&nbsp;&nbsp;&nbsp;&nbsp;성인</span>
+                                                <span>
+                                                    <input type="text" style="width: 120px;">명
+                                                    <a href="#">취소</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="importTxt">•&nbsp;&nbsp;&nbsp;&nbsp;청소년</span>
+                                                <span>
+                                                    <input type="text" style="width: 120px;">명
+                                                    <a href="#">취소</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="importTxt">•&nbsp;&nbsp;&nbsp;&nbsp;어린이(유아)</span>
+                                                <span>
+                                                    <input type="text" style="width: 120px;">명
+                                                    <a href="#">취소</a>
+                                                </span>
+
+                                            </li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="second">
+                                <div class="second-box-wrap">
+                                    <div class="second-box-step1">
+                                        <h4>예약자 정보 입력</h4>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>예약자 정보</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <span>*</span>
+                                                        <span>이메일</span>
+                                                    </th>
+                                                    <td>
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span>*</span>
+                                                        <span>이름</span>
+                                                    </th>
+                                                    <td>
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span>*</span>
+                                                        <span>휴대폰 번호</span>
+                                                    </th>
+                                                    <td>
+                                                        <select name="mobilNum1" id="mobilNum1">
+                                                            <option value="010" selected="selected">010</option>
+                                                            <option value="011">011</option>
+                                                            <option value="016">016</option>
+                                                            <option value="019">019</option>
+                                                        </select>
+                                                        <input type="text" id="mobilNum2">
+                                                        <input type="text" id="mobilNum3">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span>*</span>
+                                                        <span>이름2</span>
+                                                    </th>
+                                                    <td>
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span>*</span>
+                                                        <span>휴대폰 번호2</span>
+                                                    </th>
+                                                    <td>
+                                                        <select name="mobilNum1" id="mobilNum1">
+                                                            <option value="011">011</option>
+                                                            <option value="016">016</option>
+                                                            <option value="019">019</option>
+                                                            <option value="010" selected="selected">010</option>
+                                                        </select>
+                                                        <input type="text" id="mobilNum2">
+                                                        <input type="text" id="mobilNum3">
+                                                        
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <div class="buttonArea">
+            <h3><a href="#">취소</a></h3>
+            <h3><a href="#">예약하기</a></h3>
+        </div>
+    </div>
+  
+
+</body>
+</html>

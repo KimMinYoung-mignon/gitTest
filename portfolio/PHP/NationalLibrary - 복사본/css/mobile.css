@@ -1,0 +1,389 @@
+/*  990이하 화면 */
+
+button,
+button:focus {
+    cursor: pointer;
+}
+
+.contents {
+    max-width: 990px;
+    font-size: 1.6rem;
+
+}
+
+.gnb_area .util {
+    display: none;
+
+}
+
+.gnb {
+    max-width: 990px;
+    clear: none;
+    padding-top: 0px;
+}
+
+.gnb .logo a {   /* 텍스트 날리기 */
+    display: none;
+}
+
+.gnb .logo {
+    display: none;
+}
+
+.gnb .gnb__right {
+    display: none;
+}
+
+
+
+
+/* 반응형 시작 */
+.gnb .mobile__start {
+    display: block;
+    background: silver;
+    width: 100%;
+}
+
+.gnb .m__header {
+    width: 100%;
+    height: 16rem;
+    padding: 0 4rem;
+    box-sizing: border-box;
+}
+
+
+.gnb a {
+    display: block;
+    height: 100%;
+}
+
+
+
+
+.gnb .m__logo {
+    background: url(../img/국립중앙도서관_본부\ 병기형\ 가로조합.jpg) no-repeat;
+    width: 274px;
+    height: 70px;
+    float: left;
+    text-indent: -9999px;
+}
+
+
+.mobile__start .mobile__button {   /* 우측으로 정렬 */
+    float: right;
+}
+
+.mobile__start .mobile_ico_search {  /* 버튼 나란히 배열 */
+    float: left;
+}
+
+
+
+/* .mobile__start .mobile__button a {    텍스트 날리기 
+    display: block;
+    height: 100%;
+} */
+
+.mobile__start .button_search {   /* 돋보기 버튼 생성 */
+    background: url(../img/m_searching.JPG);
+    width: 70px;
+    height: 62px;
+    margin-right: 20px;
+}
+
+.mobile__start .mobile_ico_menu {   /* 버튼 나란히 배열 */
+    float: left;
+}
+
+
+.mobile__start .button_menu {   /* 햄버거 버튼 생성 */
+    background: url(../img/m_menu.JPG);
+    width: 70px;
+    height: 62px;
+}
+
+
+
+
+ /*********** 우측 돋보기 시작 ***********/
+.mobile_search {  
+    background: url(../img/mobile_search_bg.jpg) no-repeat;
+    max-width: 100%;
+    height: 170px;
+    position: relative;
+    top: -160px;    /* m__header의 마진top값 만큼 일단 올렸음...*/
+    padding-bottom: 500px;
+
+}
+
+.mobile_search {
+    display: none;
+
+}
+
+.mobile_search .mobil_search__header > h1 {    /* 우측 돋보기 내부 */
+    background: url(../img/국립중앙도서관_본부-병기형-가로조합.png) no-repeat;
+    width: 307px;
+    height: 112px;
+    margin: 15px;
+    float: left;
+    margin-bottom: 100px;
+    text-indent: -9999px;    
+}
+
+
+.mobile_search .mobil_search__header .m_cancle {     /* 닫기 버튼 */
+    float: right;
+    background: url(../img/cancle.png) no-repeat center;
+    width: 31px;
+    height: 31px;
+    margin: 40px;
+}
+
+
+
+
+.mobile_search .mobile_seachingBox {   /* 검색창 부분 */
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.mobile_search .mobile_seachingBox > input {
+    display: inline-block;
+    width: 420px;
+    height: 50px;
+    margin-left: 18vw;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+
+
+.mobile_inner_search .mobile_seachingBox .mobile_search_btn {
+    width: 60px;
+    height: 52px;
+    background: rgb(67, 59, 187);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-size: 60px 50px;
+}
+ /*********** 우측 돋보기 끝 ***********/
+
+
+
+
+
+ /****** 우측 햄버거 버튼 시작 ******/
+.mobile_menu {    /* 햄버거 전체 Wrap */
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    /* background: tomato; */
+    padding: 0 4rem;
+    display:none;
+}
+
+
+.mobile_menu .m_menu_topSectoion {     /* 햄버거 최상단 head wrap */
+    margin-bottom: 12.6rem;
+}
+
+
+.mobile_menu  .menu_languge {   /* 언어선택 버튼 wrap */
+    width: 20rem;
+    position: absolute;
+    top: 2rem;
+}
+
+.mobile_menu  .menu_languge button.menu_languge_btn {
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: bold;
+    left: -3rem;
+    width: 22rem;
+    background: url(../img/ico_lg_black_open_small.png) no-repeat right;
+}
+
+.mobile_menu  .menu_languge button.menu_languge_btn.active {     /* 클릭하면 화살표 바뀌는것 */
+    background: url(../img/ico_lg_black_close_small.png) no-repeat right;
+
+}
+
+.mobile_menu  .menu_languge .languge_choice {   /* 언어선택 창 */
+    background: #000;
+    margin-top: 1rem;
+    position: relative;
+    /* left: -1.8rem; */
+    z-index: 1;
+    display: none;   /* 숨기기 */
+}
+
+.mobile_menu  .menu_languge .languge_choice li {    /* 언어 선택 drop창 */
+    font-size: 2.7rem;
+    text-align: center;
+    padding: 1.6rem;
+    color: rgb(170, 170, 170);
+}
+
+
+.mobile_menu  .menu_languge .languge_choice li:hover {
+    color: orangered;
+}
+
+
+
+.mobile_menu .m_menu_cancle {   /* 닫기 버튼 */
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    background: url(../img/cancle_black_big.png) no-repeat;
+    float: right;
+    margin: 2.5rem 4rem 3rem 4rem;
+}
+
+
+.mobile_menu .m_members_header {    /* 로그인 Txt 부분 */
+    width: 100%;
+    background: wheat;
+    clear: both;
+}
+
+.mobile_menu .m_members_header .m_menu_login {    /* 로그인 */
+    display: block;
+    font-size: 5.2rem;
+    float: left;
+}
+
+.mobile_menu .m_members_header .m_menu_txt {     /* 회원가입 예약하기 */
+    display: flex;
+    float: right;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 1.5rem 0 0;
+}
+
+.mobile_menu .m_members_header .m_menu_txt:nth-child(1) {
+    margin-right: 3rem;
+}
+
+.mobile_menu .m_members_Box {     /* 로그인 하단 박스 */
+    width: 90%;
+    
+    background: #f4f4f4;
+    padding: 4rem ;
+    border-top: 1px solid #000;
+    margin-top: 4rem;
+
+    position: absolute;
+    top: 18.5rem;
+    /* box-sizing: border-box; */
+}
+
+
+.mobile_menu .m_members_Box img {
+    width: 4.2rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+    float: left;
+}
+
+.mobile_menu .m_members_Box .m_menu_2 img{
+    width: 3.2rem;
+    height: 4.07rem;
+    margin-right: 2.5rem;
+
+}
+
+.mobile_menu .m_members_Box li {
+    float: left;
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
+
+.mobile_menu .m_members_Box li.m_menu_last {
+    margin-bottom: 0rem;
+}
+
+.mobile_menu .m_members_Box p {
+    float: left;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/*********** 모바일 네비게이션 시작 ***********/
+.mobile_menu .m_nav {         /*wrap*/
+    clear: both;
+    position: relative;
+    top: 34rem;
+    /* background: lightpink; */
+}
+
+.mobile_menu .m_nav .m_menudrop {
+    width: 100%;
+    background: wheat;
+    flex-direction: column;
+}
+
+
+.mobile_menu .m_nav .Mmenu {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+.mobile_menu .m_nav .Mmenu a {
+    width: 100%;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    margin-bottom: 3rem;
+}
+
+
+
+.mobile_menu .m_nav h3 {    /* nav 메인TXT wrap */
+    font-size: 3.9rem;
+    float: left;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+
+.m_nav .m_menudrop_arrow {   /* nav 전체 우측 화살표 wrap */
+    background: url(../img/ico_lg_black_close.png) no-repeat;
+    width: 3.9rem;
+    height: 2.1rem;
+    float: right;
+    margin: 1rem 2rem;
+}
+
+.m_nav .m_TopMenu-ul {   /* nav 한 묶음씩 wrap */
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #000;
+    /* background: yellowgreen; */
+    display: none;
+}
+
+
+
+.m_nav .m_TopMenu .m_lstli {   /* nav 소메뉴  wrap */
+    clear: both;
+    margin-bottom: 3rem;
+    font-size: 2.7rem;
+}
+
+
+
+
+
+
+
