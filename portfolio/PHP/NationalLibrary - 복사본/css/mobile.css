@@ -62,8 +62,8 @@ button:focus {
 
 
 .mobile__start .mobile__button {   /* 우측으로 정렬 */
-    float: right;
-    margin-top: 3rem;
+    margin-top: 2.5em;
+    float: right;     /* 돋보기랑 햄버거버튼 높이 지정 */
 
 }
 
@@ -77,7 +77,7 @@ button:focus {
     background: url(../img/m_searching_중.png) no-repeat;
     width: 50px;
     height: 44px;
-    margin-right: 20px;
+    margin-right: 1rem;
 }
 
 .mobile__start .mobile_ico_menu {   /* 버튼 나란히 배열 */
@@ -183,7 +183,7 @@ button:focus {
     top: 0;
     /* background: tomato; */
     padding: 0 4rem;
-    z-index: 1;
+    /* z-index: 1; */
 
 }
 
@@ -218,7 +218,7 @@ button:focus {
     margin-top: 1rem;
     position: relative;
     /* left: -1.8rem; */
-    z-index: 1;
+    /* z-index: 1; */
     display: none;   /* 숨기기 */
 }
 
@@ -398,33 +398,76 @@ button:focus {
 }
 
 
-
-.middle_content .main__IMG_here h1{     /* 메인이미지 텍스트 */
-    top: 47%;
-    font-size: 2rem;
-}
-
-.middle_content .search__Box__wrap {
-    border-bottom: none;
-}
-
-.search__Box__wrap .search__inner {
-    display: none;
-}
-
-
-
-.mobile_middle_content {
+.middle_content .main__IMG_here img.mobile_main_center {
     display: block;
-}
-
-.mobile_middle_content .m_center_img img {
     width: 100%;
 }
 
 
+.middle_content .main__IMG_here h1{     /* 메인이미지 텍스트 */
+    top: 47%;
+
+    font-size: 2rem;
+}
+
+.middle_content .search__Box__wrap {      /* 검색 부분 */
+    width: 70rem;
+    margin-bottom: 5vw;
+}
 
 
+.search__Box__wrap .search__Box__Left input {    /* 검색 상세검색 라디오버튼*/
+    vertical-align: middle;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.search__Box__wrap .search__Box__Left label {
+    margin-right: 10px;
+}
+
+.search__Box__wrap .search__inner {
+    display: block;
+}
+
+
+
+.search__Box__wrap .search__Box__middle {
+    position: relative;
+    display: block;
+}
+
+
+.search__Box__wrap .search__Box__middle input {   /* 검색창 */
+    width: 600px;
+    margin: 10px 10px;
+    
+}
+
+.search__Box__wrap .search__Box__middle a {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    padding-top: 15px;
+    top: -25px;
+    right: 10px;
+}
+
+
+
+
+
+
+.search__Box__wrap .search__Box__middle button {      /* 다국어 입력하기 버튼 */
+    position: absolute;
+    right: 90px;
+    top: -40px;
+    height: 25px;
+
+    display: block;
+    
+   
+}
 
 
 

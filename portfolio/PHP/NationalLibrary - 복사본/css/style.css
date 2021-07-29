@@ -206,6 +206,13 @@ button:focus {
     width: 100%;
 }
 
+
+
+.middle_content .main__IMG_here img.mobile_main_center {
+    display: none;
+}
+
+
 .middle_content .main__IMG_here h1{      /* 메인이미지 텍스트 */
     position: absolute;
     left: 50%;
@@ -213,7 +220,7 @@ button:focus {
     top: 40%;
 }
 
-.middle_content .search__Box__wrap {
+.middle_content .search__Box__wrap {      /* 검색 부분 */
     width: 750px;
     position: absolute;
     /* background: orange; */
@@ -225,19 +232,20 @@ button:focus {
 
 .search__Box__wrap .search__inner {
     display: flex;
-    vertical-align: middle;
 }
 
+.search__Box__wrap .search__Box__Left {
+    padding-top: 15px;
+}
 
-
-.search__Box__wrap .search__Box__Left input {
+.search__Box__wrap .search__Box__Left input {    /* 검색 상세검색 라디오버튼*/
     vertical-align: middle;
     margin-right: 5px;
     font-size: 18px;
 }
 
 .search__Box__wrap .search__Box__Left label {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .search__Box__wrap .search__Box__middle {
@@ -245,25 +253,46 @@ button:focus {
 }
 
 
-.search__Box__wrap .search__Box__middle input {
+.search__Box__wrap .search__Box__middle input {    /* 검색창 */
     display: inline-block;
-    width: 350px;
-    height: 25px;
-    margin: 0 20px;
+    width: 400px;
+    height: 35px;
+    margin: 10px;
     padding: 10px 5px;
     box-sizing: border-box;
     
 }
 
 
+.search__Box__wrap .search__Box__middle a {
+    display: inline-block;
+
+    width: 54px;
+    height: 35px;
+    padding-top: 12px;
+    background: rgb(18, 18, 26);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+
+}
+
+.search__Box__wrap .search__Box__middle a:hover {
+    color: orangered;
+}
+
 .search__Box__wrap .search__Box__middle button {
-    margin-left: 20px;
-    
+    height: 35px;
+
+    margin-left: 18px;
+    margin-top: 10px;
+
 }
 
 
 
-.mobile_middle_content {
-    display: none;
-}
+
+
+
 
