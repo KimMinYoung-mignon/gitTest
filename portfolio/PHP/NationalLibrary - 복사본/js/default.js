@@ -17,6 +17,8 @@ $(function(){    ////////// 돋보기 시작
 
 $(function(){    ////////// 햄버거버튼 시작
 
+
+
     $('.button_menu').click(function(){          //햄버거버튼 클릭하면 검색창 뜸
         // $(this).show('active');
         $('.mobile_menu').fadeIn('active');

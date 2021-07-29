@@ -33,13 +33,12 @@ button:focus {
 /**** 반응형 헤더 시작 ****/
 .gnb .mobile__start {
     display: block;
-    background: silver;
     width: 100%;
 }
 
 .gnb .m__header {
     width: 100%;
-    height: 16rem;
+    /* height: 16rem; */
     padding: 0 4rem;
     box-sizing: border-box;
 }
@@ -53,16 +52,19 @@ button:focus {
 
 
 .gnb .m__logo {
-    background: url(../img/국립중앙도서관_본부\ 병기형\ 가로조합.jpg) no-repeat;
+    background: url(../img/국립중앙도서관_본부-병기형-가로조합_중.png) no-repeat;
     width: 274px;
     height: 70px;
     float: left;
     text-indent: -9999px;
+    margin-top: 3rem;
 }
 
 
 .mobile__start .mobile__button {   /* 우측으로 정렬 */
     float: right;
+    margin-top: 3rem;
+
 }
 
 .mobile__start .mobile_ico_search {  /* 버튼 나란히 배열 */
@@ -72,9 +74,9 @@ button:focus {
 
 
 .mobile__start .button_search {   /* 돋보기 버튼 생성 */
-    background: url(../img/m_searching.JPG);
-    width: 70px;
-    height: 62px;
+    background: url(../img/m_searching_중.png) no-repeat;
+    width: 50px;
+    height: 44px;
     margin-right: 20px;
 }
 
@@ -84,9 +86,9 @@ button:focus {
 
 
 .mobile__start .button_menu {   /* 햄버거 버튼 생성 */
-    background: url(../img/m_menu.JPG);
-    width: 70px;
-    height: 62px;
+    background: url(../img/m_menu_중.png);
+    width: 50px;
+    height: 44px;
 }
 
 
@@ -96,66 +98,76 @@ button:focus {
 .mobile_search {  
     background: url(../img/mobile_search_bg.jpg) no-repeat;
     max-width: 100%;
-    height: 170px;
     position: relative;
-    top: -160px;    /* m__header의 마진top값 만큼 일단 올렸음...*/
     padding-bottom: 500px;
+    height: 17rem;
 
 }
 
-.mobile_search {
-    display: none;
-
-}
 
 .mobile_search .mobil_search__header > h1 {    /* 우측 돋보기 내부 */
     background: url(../img/국립중앙도서관_본부-병기형-가로조합.png) no-repeat;
-    width: 307px;
-    height: 112px;
+
+    width: 30.7rem;
+    height: 11.2rem;
+
+    text-indent: -9999px; 
     margin: 15px;
     float: left;
-    margin-bottom: 100px;
-    text-indent: -9999px;    
+    position: absolute;
 }
 
 
 .mobile_search .mobil_search__header .m_cancle {     /* 닫기 버튼 */
-    float: right;
     background: url(../img/cancle.png) no-repeat center;
-    width: 31px;
-    height: 31px;
-    margin: 40px;
+    width: 3.1rem;
+    height: 3.1rem;
+    position: absolute;
+    top: 50px;
+    right: 40px;
 }
 
 
-
-
-.mobile_search .mobile_seachingBox {   /* 검색창 부분 */
-    clear: both;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
+.mobile_search .mobile_seachingBox {
+    position: absolute;
+    top: 50%;
+    left: 18%;
 }
+
+
 
 
 .mobile_search .mobile_seachingBox > input {
-    display: inline-block;
     width: 420px;
-    height: 50px;
-    margin-left: 18vw;
-    padding: 25px 15px;
+    height: 51px;
+    padding-left: 10px;
     box-sizing: border-box;
 }
 
 
+
+
 .mobile_inner_search .mobile_seachingBox .mobile_search_btn {
-    width: 60px;
+    width: 61px;
     height: 52px;
     background: rgb(67, 59, 187);
     color: white;
+    margin-bottom: 3px;
     text-align: center;
     vertical-align: middle;
-    background-size: 60px 50px;
+}
+
+
+
+@media(max-width:686px) {     /* 1300이하 로그인 회원가입 상단 배치 */
+
+    .mobile_search .mobile_seachingBox {
+        left: 18%;
+    }
+
+    .mobile_search .mobile_seachingBox > input {
+        width: 280px;
+    }
 }
  /*********** 우측 돋보기 끝 ***********/
 
@@ -171,7 +183,8 @@ button:focus {
     top: 0;
     /* background: tomato; */
     padding: 0 4rem;
-    display:none;
+    z-index: 1;
+
 }
 
 
@@ -358,8 +371,6 @@ button:focus {
 
 .m_nav .m_TopMenu-ul {   /* nav 한 묶음씩 wrap */
     margin-bottom: 3rem;
-    /* border-bottom: 1px solid #000; */
-    /* background: yellowgreen; */
     display: none;
 }
 
@@ -369,6 +380,46 @@ button:focus {
     clear: both;
     margin-bottom: 3.4rem;
     font-size: 2.7rem;
+}
+
+
+
+
+
+/*********************** 컨텐츠 시작 ************************/
+
+.middle_content {
+    max-width: 990px;
+    top: 3rem;
+}
+
+.middle_content .main__IMG_here img{
+    display: none;
+}
+
+
+
+.middle_content .main__IMG_here h1{     /* 메인이미지 텍스트 */
+    top: 47%;
+    font-size: 2rem;
+}
+
+.middle_content .search__Box__wrap {
+    border-bottom: none;
+}
+
+.search__Box__wrap .search__inner {
+    display: none;
+}
+
+
+
+.mobile_middle_content {
+    display: block;
+}
+
+.mobile_middle_content .m_center_img img {
+    width: 100%;
 }
 
 

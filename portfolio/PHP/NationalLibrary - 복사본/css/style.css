@@ -192,3 +192,78 @@ button:focus {
 }
 
 
+
+
+/*********************** 컨텐츠 시작 ************************/
+
+.middle_content {
+    max-width: 1440px;
+    position: relative;
+    top: 150px;
+}
+
+.middle_content .main__IMG_here img{
+    width: 100%;
+}
+
+.middle_content .main__IMG_here h1{      /* 메인이미지 텍스트 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+}
+
+.middle_content .search__Box__wrap {
+    width: 750px;
+    position: absolute;
+    /* background: orange; */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    border-bottom: 3px solid black;
+}
+
+.search__Box__wrap .search__inner {
+    display: flex;
+    vertical-align: middle;
+}
+
+
+
+.search__Box__wrap .search__Box__Left input {
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.search__Box__wrap .search__Box__Left label {
+    margin-right: 20px;
+}
+
+.search__Box__wrap .search__Box__middle {
+    display: flex;
+}
+
+
+.search__Box__wrap .search__Box__middle input {
+    display: inline-block;
+    width: 350px;
+    height: 25px;
+    margin: 0 20px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    
+}
+
+
+.search__Box__wrap .search__Box__middle button {
+    margin-left: 20px;
+    
+}
+
+
+
+.mobile_middle_content {
+    display: none;
+}
+
