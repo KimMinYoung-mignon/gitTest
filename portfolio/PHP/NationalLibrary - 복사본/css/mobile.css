@@ -5,39 +5,32 @@ button:focus {
     cursor: pointer;
 }
 
+.Mmenu__nav,
+.Mmenu__nav:focus{
+    cursor: pointer;
+}
+
 .contents {
     max-width: 990px;
     font-size: 1.6rem;
-
 }
+
 
 .gnb_area .util {
     display: none;
-
 }
 
-.gnb {
-    max-width: 990px;
-    clear: none;
-    padding-top: 0px;
-}
-
-.gnb .logo a {   /* 텍스트 날리기 */
+.gnb_area .util .util_link > li {
     display: none;
 }
 
-.gnb .logo {
-    display: none;
-}
-
-.gnb .gnb__right {
+.gnb .gnb__header, .nav , .link_list {
     display: none;
 }
 
 
 
-
-/* 반응형 시작 */
+/**** 반응형 헤더 시작 ****/
 .gnb .mobile__start {
     display: block;
     background: silver;
@@ -59,7 +52,6 @@ button:focus {
 
 
 
-
 .gnb .m__logo {
     background: url(../img/국립중앙도서관_본부\ 병기형\ 가로조합.jpg) no-repeat;
     width: 274px;
@@ -78,11 +70,6 @@ button:focus {
 }
 
 
-
-/* .mobile__start .mobile__button a {    텍스트 날리기 
-    display: block;
-    height: 100%;
-} */
 
 .mobile__start .button_search {   /* 돋보기 버튼 생성 */
     background: url(../img/m_searching.JPG);
@@ -274,7 +261,7 @@ button:focus {
     width: 90%;
     
     background: #f4f4f4;
-    padding: 4rem ;
+    padding: 4rem;
     border-top: 1px solid #000;
     margin-top: 4rem;
 
@@ -325,7 +312,6 @@ button:focus {
     clear: both;
     position: relative;
     top: 34rem;
-    /* background: lightpink; */
 }
 
 .mobile_menu .m_nav .m_menudrop {
@@ -342,18 +328,21 @@ button:focus {
 
 
 
-.mobile_menu .m_nav .Mmenu a {
+.mobile_menu .m_nav .Mmenu .Mmenu__nav {
     width: 100%;
-    border-bottom: 1px solid rgb(46, 46, 46);
-    margin-bottom: 3rem;
+    border-top: 1px solid rgb(46, 46, 46);
 }
 
+.mobile_menu .m_nav .Mmenu .st {
+    border-top: none;
+
+}
 
 
 .mobile_menu .m_nav h3 {    /* nav 메인TXT wrap */
     font-size: 3.9rem;
     float: left;
-    margin-bottom: 3rem;
+    margin: 3rem 0 ;
     font-weight: 500;
 }
 
@@ -363,12 +352,13 @@ button:focus {
     width: 3.9rem;
     height: 2.1rem;
     float: right;
-    margin: 1rem 2rem;
+    margin: 5rem 2rem 0 0;
 }
+
 
 .m_nav .m_TopMenu-ul {   /* nav 한 묶음씩 wrap */
     margin-bottom: 3rem;
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #000; */
     /* background: yellowgreen; */
     display: none;
 }
@@ -377,7 +367,7 @@ button:focus {
 
 .m_nav .m_TopMenu .m_lstli {   /* nav 소메뉴  wrap */
     clear: both;
-    margin-bottom: 3rem;
+    margin-bottom: 3.4rem;
     font-size: 2.7rem;
 }
 

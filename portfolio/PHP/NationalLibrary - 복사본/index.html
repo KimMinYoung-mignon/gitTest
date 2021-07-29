@@ -49,41 +49,35 @@
 
                 <!-- GNB 부분 시작 -->
                 <div class="gnb">
-                    <h1 class="logo"><a href="#">국립중앙도서관</a></h1>
-
-                    <div class="gnb__right">
-                        
-                        <div class="nav">
-                            <ul class="here__GNB">
-                                <li><a href="">관람 정보</a></li>
-                                <li><a href="">전시</a></li>
-                                <li><a href="">교육행사</a></li>
-                                <li><a href="">소장품</a></li>
-                                <li><a href="">학술출판</a></li>
-                                <li><a href="">소식참여</a></li>
-                                <li><a href="">도서관소개</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="link_list">
-                            <ul>
-                                <li><a href="">로그인</a></li>
-                                <li><a href="">회원가입</a></li>
-                                <li>
-                                    <button style="background: white;">
-                                        <img src="img/search.png" alt=""> 
-                                        <span class="hide">검색</span>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="gnb__header">
+                        <a href="#">
+                            <h1 class="logo">국립중앙도서관</h1>
+                            <img src="img/국립중앙도서관_본부 병기형 가로조합.jpg" alt="">
+                        </a>
                     </div>
+                    <div class="nav">
+                        <ul class="here__GNB">
+                            <li><a href="">관람 정보</a></li>
+                            <li><a href="">전시</a></li>
+                            <li><a href="">교육행사</a></li>
+                            <li><a href="">소장품</a></li>
+                            <li><a href="">학술출판</a></li>
+                            <li><a href="">소식참여</a></li>
+                            <li><a href="">도서관소개</a></li>
+                        </ul>
+                    </div>
+                    <div class="link_list">
+                        <ul class="login__header">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <button><span class="hide">검색</span></button>
+                        </ul>
+                    </div>
+                        
+                   
+                  
 
-
-
-
-
-                    <!------------------ 반응형 시작 ------------------->
+                    <!------------------ 반응형 헤더 시작 ------------------->
                     <div class="mobile__start">
                         <header class="m__header">
                             <h1 class="m__logo"><a href="#">국립중앙도서관</a></h1>
@@ -180,14 +174,14 @@
                                     <!---------- 모바일 네비게이션 시작 ---------->
                             <div class="m_nav active">
                                 <ul id="m_menudrop">
-                                    <li id="m_TopMenu__1" class="m_TopMenu active">
+                                    <li id="m_TopMenu__1" class="m_TopMenu">
                                         <div class="m_TopMenu_Text_1 Mmenu">
-                                            <a href="#">
+                                            <span class="Mmenu__nav st">
                                                 <h3>관람정보</h3>
-                                                <button class="m_menudrop_arrow"><span class="hide">더보기</span></button>
-                                            </a>
+                                                <button class="m_menudrop_arrow active"><span class="hide">더보기</span></button>
+                                            </span>
                                         </div>
-                                        <ul id="m_TopMenu-ul" class="m_TopMenu-ul">
+                                        <ul id="m_TopMenu_ul_1" class="m_TopMenu-ul">
                                             <a href="#">
                                                 <li class="m_lstli">소메뉴1</li>
                                             </a>
@@ -203,12 +197,12 @@
 
                                     <li id="m_TopMenu__2" class="m_TopMenu">
                                         <div class="m_TopMenu_Text_2 Mmenu">
-                                            <a href="#">
+                                            <span class="Mmenu__nav">
                                                 <h3>전시</h3>
-                                                <button class="m_menudrop_arrow active"><span class="hide">더보기</span></button>
-                                            </a>
+                                                <button class="m_menudrop_arrow"><span class="hide">더보기</span></button>
+                                            </span>
                                         </div>
-                                        <ul id="m_TopMenu-ul" class="m_TopMenu-ul">
+                                        <ul id="m_TopMenu_ul_2" class="m_TopMenu-ul">
                                             <a href="#">
                                                 <li class="m_lstli">소메뉴1</li>
                                             </a>
@@ -223,12 +217,12 @@
 
                                     <li id="m_TopMenu__3" class="m_TopMenu">
                                         <div class="m_TopMenu_Text_3 Mmenu">
-                                            <a href="#">
+                                            <span class="Mmenu__nav">
                                                 <h3>교육행사</h3>
                                                 <button class="m_menudrop_arrow active"><span class="hide">더보기</span></button>
-                                            </a>
+                                            </span>
                                         </div>
-                                        <ul id="m_TopMenu-ul" class="m_TopMenu-ul">
+                                        <ul id="m_TopMenu_ul_3" class="m_TopMenu-ul">
                                             <a href="#">
                                                 <li class="m_lstli">소메뉴1</li>
                                             </a>
@@ -243,12 +237,12 @@
 
                                     <li id="m_TopMenu__4" class="m_TopMenu">
                                         <div class="m_TopMenu_Text_4 Mmenu">
-                                            <a href="#">
+                                            <span class="Mmenu__nav">
                                                 <h3>소장품</h3>
                                                 <button class="m_menudrop_arrow"><span class="hide">더보기</span></button>
-                                            </a>
+                                            </span>
                                         </div>
-                                        <ul id="m_TopMenu-ul" class="m_TopMenu-ul">
+                                        <ul id="m_TopMenu_ul_4" class="m_TopMenu-ul">
                                             <a href="#">
                                                 <li class="m_lstli">소메뉴1</li>
                                             </a>
@@ -263,12 +257,12 @@
 
                                     <li id="m_TopMenu__5" class="m_TopMenu">
                                         <div class="m_TopMenu_Text_5 Mmenu">
-                                            <a href="#">
+                                            <span class="Mmenu__nav">
                                                 <h3>학술출판</h3>
                                                 <button class="m_menudrop_arrow active"><span class="hide">더보기</span></button>
-                                            </a>
+                                            </span>
                                         </div>
-                                        <ul id="m_TopMenu-ul" class="m_TopMenu-ul">
+                                        <ul id="m_TopMenu_ul_5" class="m_TopMenu-ul">
                                             <a href="#">
                                                 <li class="m_lstli">소메뉴1</li>
                                             </a>
@@ -283,12 +277,12 @@
 
                                     <li id="m_TopMenu__6" class="m_TopMenu">
                                         <div class="m_TopMenu_Text_6 Mmenu">
-                                            <a href="#">
+                                            <span class="Mmenu__nav">
                                                 <h3>소식참여</h3>
                                                 <button class="m_menudrop_arrow active"><span class="hide">더보기</span></button>
-                                            </a>
+                                            </span>
                                         </div>
-                                        <ul id="m_TopMenu-ul" class="m_TopMenu-ul">
+                                        <ul id="m_TopMenu_ul_6" class="m_TopMenu-ul">
                                             <a href="#">
                                                 <li class="m_lstli">소메뉴1</li>
                                             </a>
@@ -302,12 +296,12 @@
                                     </li>
                                     <li id="m_TopMenu__7" class="m_TopMenu">
                                         <div class="m_TopMenu_Text_7 Mmenu">
-                                            <a href="#" class="Mmenu__btn">
+                                            <span class="Mmenu__nav">
                                                 <h3>도서관 소개</h3>
                                                 <button class="m_menudrop_arrow active"><span class="hide">더보기</span></button>
-                                            </a>
+                                            </span>
                                         </div>
-                                        <ul id="m_TopMenu-ul" class="m_TopMenu-ul">
+                                        <ul id="m_TopMenu_ul_7" class="m_TopMenu-ul">
                                             <a href="#">
                                                 <li class="m_lstli">소메뉴1</li>
                                             </a>
@@ -324,28 +318,29 @@
 
                         </div> 
                     </div>
-                        <!-- 우측 햄버거버튼 끝 -->
+                            <!-- 우측 햄버거버튼 끝 -->
+                    <!------------------ 반응형 헤더 끝 ------------------->
+
 
                 </div>
-
-                    <!-- <div class="nav_link_list">
-                        <ul>
-                            <li><a href="">로그인</a></li>
-                            <li><a href="">회원가입</a></li>
-                            <li>
-                                <button>검색</button>
-                            </li>
-                        </ul>
-                    </div> -->
-                </div> 
                 <!-- GNB 부분 끝 -->
-
             </header>
-            <!-- 해더 끝 -->
 
-            <div class="contents"></div>
 
-            <footer></footer>
+
+                <!-- 컨텐츠 시작 -->
+            <div class="contents">
+                
+            </div>
+                <!-- 컨텐츠 꿑 -->
+
+
+                <!-- Footer 시작 -->
+            <footer>
+
+            </footer>
+                <!-- Footer 끝 -->
+
         </div>
     </div>
 
