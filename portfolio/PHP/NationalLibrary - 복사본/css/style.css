@@ -42,7 +42,11 @@ a {
 }
 
 html { font-size: 10px; }    /* 폰트 단위 rem으로 정의하기 */
-body { font-size: 1rem; }    /* 폰트 단위 rem으로 정의하기 */
+body { 
+    font-size: 1rem; 
+    overflow-y: scroll;      /* 선생님 수정 */
+}    
+
 
 button,
 button:focus {
@@ -65,18 +69,29 @@ button:focus {
 /* sns부분 시작 */
 .gnb_area {
     width: 100%;
-    position: relative;
+    /* position: relative; */
+
+    /* 선생님 수정 */
+    position: absolute;
+    z-index: 1000;
+}
+
+.util_wrap {
+    max-width: 1440px;
 }
 
 .gnb_area .util {
-    float: right;
     margin-top: 15px;
 }
+/* .gnb_area .util .util_link {
+    max-width: 1440px;
+} */
 
 .gnb_area .util .util_link > li {
-    float: left;
+    float: right;
     margin-right: 10px;
     border-top: 3.5px solid black;
+    
 }
 
 .gnb_area .util .util_link a {
@@ -112,7 +127,7 @@ button:focus {
     clear: both;
     /* height: 200px; */
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 
@@ -130,23 +145,70 @@ button:focus {
 
 .gnb .logo {
     text-indent: -9999px;
+    
 }
 
-.gnb .nav .here__GNB {
-    position: absolute;
-    padding: 30px 0 0 330px;
-    top: 24px;
+
+.gnb .nav {
+    width: 100%;
 }
 
-.gnb .nav li {
+
+.gnb .nav .depth1 > li{
+    width: 180px;
     float: left;
-    padding: 20px 15px;
+    padding: 80px 10px 0 10px;
+    text-align: center;
 }
 
-.gnb .nav li > a {
-    font-size: 1.5vw;
-    padding-right: 7px;
+.gnb .nav .depth1 > li:nth-child(1) {
+    margin-left: 280px;
 }
+
+.gnb .nav .depth1 .main_title {
+    font-size: 22px;
+}
+
+.gnb .nav .depth1 .main_title:nth-child(3) {
+    margin-left: 30px;
+}
+
+.gnb .nav .depth1 .sub_menu {
+    width: 100%;
+    position: absolute;
+    top: 105px;
+
+}
+
+
+.gnb .nav .depth1 .sub_menu .depth2 {
+    padding-top: 30px;
+}
+
+
+.gnb .nav .depth1 .sub_menu .depth2 li {
+    width: 100%;
+    font-size: 15px;
+    padding-right: 10px;
+    float: left;
+    display: flex;
+    
+}
+
+
+
+
+.gnb .nav .depth3_menu {         /* 하하단GNB */
+    background: indianred;
+    display:none;
+}
+
+
+
+
+
+
+
 
 .gnb .link_list {
     position: absolute;
@@ -184,6 +246,54 @@ button:focus {
 }
 
 
+@media(max-width:1230px) {     /* 1230이하 GNB 재배치 */
+  
+
+    .gnb .nav .depth1 > li:nth-child(1) {
+        margin-left: 50px;
+    }
+
+    .gnb .nav li > a {
+        font-size: 1.5vw;
+        padding-right: 50px;
+    }
+
+}
+
+
+@media(max-width:1240px) {     /* 1230이하 GNB 재배치 */
+    .gnb .nav .depth1 > li{
+        width: 150px;
+        float: left;
+        padding: 80px 2px 0px 2px;
+    }
+
+
+    .gnb .nav .depth1 > li:nth-child(1) {
+        margin-left: 280px;
+    }
+    
+    .gnb .nav li > a {
+        font-size: 1.5vw;
+        padding-right: 5px;
+    }
+
+}
+
+@media(max-width: 1097px) {     /* 1230이하 GNB 재배치 */
+
+    .gnb .nav .depth1 > li{
+        
+        width: 130px;
+        float: left;
+        padding: 80px 5px 0 5px;
+    }
+    
+
+    .gnb .nav .depth1 .main_title {
+        font-size: 19px;
+    }
+}
 
 
 
@@ -198,12 +308,21 @@ button:focus {
 
 .middle_content {
     max-width: 1440px;
-    position: relative;
-    top: 150px;
+    /* top: 150px; */
+    /* position: relative; */
 }
+
+
+.middle_content .main_center_img {
+    width: 100%;
+    position: relative;  
+    /* relative 쓰면 자꾸 모바일 버튼 막힘 ㅠㅠㅠ 테스트중 선생님 수정 */
+}
+
 
 .middle_content .main__IMG_here img{
     width: 100%;
+    margin-top: 230px;
 }
 
 
@@ -214,20 +333,34 @@ button:focus {
 
 
 .middle_content .main__IMG_here h1{      /* 메인이미지 텍스트 */
+    text-align: center;
+    transform: translateX(-50%);
+    
+    /* top: 120%; */
+
+
+    /* 선생님 수정 */
+    width:500px;
+    height:90px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    top: 40%;
+    top: 55%;
+
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%);*/
 }
 
 .middle_content .search__Box__wrap {      /* 검색 부분 */
     width: 750px;
-    position: absolute;
-    /* background: orange; */
-    left: 50%;
+    position: relative;
+
     transform: translateX(-50%);
-    margin: 20px 0;
+    left: 50%;
+
+    margin: 40px 0;
     border-bottom: 3px solid black;
+
 }
 
 .search__Box__wrap .search__inner {
@@ -264,7 +397,7 @@ button:focus {
 }
 
 
-.search__Box__wrap .search__Box__middle a {
+.search__Box__wrap .search__Box__middle > a {
     display: inline-block;
 
     width: 54px;
@@ -282,7 +415,7 @@ button:focus {
     color: orangered;
 }
 
-.search__Box__wrap .search__Box__middle button {
+.search__Box__wrap .search__Box__middle button {     /* 다국어 입력하기 버튼 */
     height: 35px;
 
     margin-left: 18px;
@@ -291,8 +424,345 @@ button:focus {
 }
 
 
+/***************** 퀵메뉴 *********************/
+
+.quick_menu_wrap {
+    max-width: 1440px;
+    position: relative;
+    padding-top: 3rem;
+}
+
+.quick_menu_wrap .quick_menu {
+    width: 100%;
+    position: absolute;
+
+}
+
+
+
+.quick_menu_wrap .quick_menu .quick_menu_ul {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .quick_ico_wrap {
+    width: 200px;
+    flex: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(102, 102, 102);
+    border-radius: 20px 0 20px 0;
+    margin: 0 12px;
+    box-shadow: 7px 7px 5px #7e7d7d;
+}
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .quick_ico_wrap:nth-child(8) {
+    margin-right: 0;
+}
+
+
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .quick_ico_wrap img {
+    width: 76px;
+    height: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .ico1 img, .ico7 img{
+    margin-left: 6px;
+}
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .ico2 img{
+    margin-left: 14px;
+}
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .ico3 img{
+    margin-left: 20px;
+}
+.quick_menu_wrap .quick_menu .quick_menu_ul .ico8 img{
+    margin-left: 5px;
+}
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .quick_ico_wrap p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 
 
 
 
 
+
+
+
+
+/******************* 메인 컨텐츠 시작 ********************/
+
+.inner__contents_wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20rem;
+}
+
+.inner__contents_wrap .inner_con h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: var(--font-largest);
+    margin-bottom: 40px;
+}
+
+
+.content_1st > .news {
+    width: 100%;
+    background: rgba(248, 248, 248, 0.8);
+    display: flex;
+    margin-bottom: 170px;
+}
+
+.content_1st .news .txt {
+    flex-basis: 25%;
+    padding: 40px 0 0 50px;
+}
+
+.content_1st .news .txt p {
+    font-size: var(--font-small);
+    line-height: 1.7;
+}
+
+.content_1st .news .newsIMG {
+    flex-direction: column;
+    flex-basis: 75%;
+    margin: 3rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.content_1st .news .newsIMG img:hover{
+    box-shadow: 0 0 10px 8px rgb(179, 179, 179);
+    transition: 0.8s;
+}
+/* 
+.content_1st .news .newsIMG .top-img {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+
+}
+
+.content_1st .news .newsIMG .bottom-img {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.content_1st .news .newsIMG .newsIMG_ul{
+    padding-left: 40px;
+}
+
+.content_1st .news .newsIMG .newsIMG_ul img{
+    float: left;    
+    margin: 5px;
+    display: flex;
+    width: 33rem;
+    height: 20rem;
+}
+
+
+
+
+
+
+/* youtube */
+.content_2st  {
+    width: 100%;
+    margin: -170px 0 130px 0;     /* 컨텐츠 간격 조정  */
+    background: white;
+
+}
+
+
+
+.content_2st .youtube_link .youtube_url {
+    position: relative;
+    margin-top: -250px;
+    height: 100%;
+    padding-bottom: 56.25%;
+    flex-basis: 75%;
+}
+
+.content_2st .youtube_link iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 215px 238px 0 80px;
+    box-sizing: border-box;
+}
+
+.content_2st .youtube_link .txt h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: var(--font-largest);
+    padding: 100px 40px 40px 40px;
+}
+
+
+.content_2st .youtube_link .bookTxt {
+    position: absolute;
+    right: 3%;
+    top: 40%;
+    z-index: 1000;
+    line-height: 3;
+
+}
+
+
+
+.content_2st .youtube_link .txt .txtNum {
+    font-size: 20px;
+    color: rgba(137, 137, 137, 0.8);
+}
+
+
+.content_2st .youtube_link .txt li:hover{
+    color: orangered
+} 
+
+
+
+
+
+
+/* education */
+
+.content_3st {
+    position: relative;
+}
+.content_3st .education {
+    width: 100%;
+    background: rgba(248, 248, 248, 0.8);
+    margin-bottom: 80px;
+}
+
+.content_3st .education h3 {
+    margin-bottom: 20px;
+}
+
+.content_3st .education .txt {
+    padding: 30px 30px 10px 30px;
+
+}
+
+
+
+.content_3st .education .controls {
+    position: absolute;
+    top: 140px;
+    font-size: vat(--font-micro);
+    z-index: 1000;
+}
+
+
+.content_3st .education .controls a {
+    cursor: pointer;
+    font-size: 15px;
+    background: black;
+    color:white;
+
+
+}
+
+    
+/* education 슬라이더 시작 */
+.content_3st .education .silde_wrapper img {
+    width: 300px;
+    height: 420px;
+    margin-top: 40px;
+    position: relative;
+
+}
+
+.content_3st .education .silde_wrapper {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+}
+
+.content_3st .education .silde_wrapper .slides {
+    position: absolute;
+    left: 0; top: 20px;
+    /* width: 1290px; 제이쿼리로 계산해서 여기선 없애도 됨*/
+    transition: left 0.5s ease-out;
+
+}
+
+.content_3st .education .silde_wrapper .slides li:not(:last-child) {
+    float: left;
+    margin-right: 30px;
+}
+
+
+
+    
+
+
+
+
+
+/* 맞춤서비스 */
+.content_4st .service {
+    width: 100%;
+    display: flex;
+}
+
+.content_4st .txt {
+    flex-basis: 25%;
+    padding: 30px 30px 0 30px;
+
+}
+
+
+.content_4st .txt li {
+    line-height: 2;
+    font-size: var(--font-midium);
+    font-weight: 400;
+}
+
+.content_4st .txt a:hover{
+    border-bottom: 3px solid rgb(101, 101, 101);
+    transition: .2s;
+    /* color: rgb(74, 70, 125); */
+}
+
+
+.content_4st .service_menu {
+    display: flex;
+    line-height: 3.5;
+    font-size: 17px;
+    margin-top: 30px;
+    flex-basis: 100%;
+    font-weight: bold;
+}
+
+
+
+.content_4st .service_menu a:hover{
+    color: orangered;
+}
+
+.content_4st .service_menu .service_menu_left {
+    flex-basis: 40%;
+}
+
+.content_4st .service_menu .service_menu_mid {
+    flex-basis: 32%;
+}
+
+.content_4st .service_menu .service_menu_right {
+    flex-basis: 27%;
+}

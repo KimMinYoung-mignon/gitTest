@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* position 썼을 경우
+
+body {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 30px;
+} 
+*/
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    background: rgb(211, 145, 134);
+    color: white;
+    padding: 1rem;
+}
+
+.word-display {
+    margin-top: 3rem;
+    font-size: 40px;
+    color: rgb(211, 145, 134);
+}
+
+.word-input-box {
+    margin-top: 2rem;
+}
+
+.word-input {
+    padding: .5rem;
+    width: 300px;
+}
+
+.game-info {
+    margin-top: 2rem;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.game-info div {
+    margin-left: 20px;
+}
+
+.time, .score {
+    font-size: 30px;
+}
+
+.button {
+    width: 10rem;
+    height: 35px;
+    background: rgb(211, 145, 134);
+    color: white;
+    border: none;
+    margin-top: 3rem;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25rem ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loading {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+

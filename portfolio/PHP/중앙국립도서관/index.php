@@ -242,7 +242,7 @@
                         <li><a href="#"><img src="img/book (1).JPG" alt=""></a></li>
                     </ul>
                 </div>
-            </div> 
+          려  </div> 
             <div class="education">
                 <div class="txt">
                     <h3>교육•행사</h3>

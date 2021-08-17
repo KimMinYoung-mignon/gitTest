@@ -1,0 +1,35 @@
+
+
+1. 게임시작 버튼 클릭시 초 카운트다운 시작 설정
+2. 스코어 올리기
+3. 게임시작 버튼 클릭시 클릭 방지
+4. 카운트다운 끝나면 다시 게임시작 돌아오게끔 설정
+5. 단어 랜덤배열
+6. 단어 일치 체크
+
+
+const GAME_TIME = 8;
+let time = GAME_TIME;
+const wordDisplay = document.querySelector('.word-display');
+const wordInput = document.querySelector('.word-input');
+const scoreDisplay = document.querySelector('.score');
+
+
+
+
+// 6. 단어 일치 체크
+function checkMatch() {
+  if ( wordInput.value.toLoweCase() === wordDisplay .value.toLowCase() {
+     wordInput.value = "";  //초기화 시키기
+     score++;   //점수 1점 올라가고
+     scoreDisplay.innerText = scroe;
+     GAME_TIME.innerText = time;
+}
+
+
+
+
+
+
+
+

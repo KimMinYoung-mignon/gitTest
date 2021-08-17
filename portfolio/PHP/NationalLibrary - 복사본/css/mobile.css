@@ -16,7 +16,9 @@ button:focus {
 }
 
 
+
 .gnb_area .util {
+    position: static;
     display: none;
 }
 
@@ -57,14 +59,15 @@ button:focus {
     height: 70px;
     float: left;
     text-indent: -9999px;
-    margin-top: 3rem;
+    margin: 3rem 0;
+
 }
 
 
 .mobile__start .mobile__button {   /* 우측으로 정렬 */
     margin-top: 2.5em;
     float: right;     /* 돋보기랑 햄버거버튼 높이 지정 */
-
+    /* clear: both;  이거 쓰면 정렬 흐트러짐*/
 }
 
 .mobile__start .mobile_ico_search {  /* 버튼 나란히 배열 */
@@ -181,7 +184,6 @@ button:focus {
     background: white;
     position: absolute;
     top: 0;
-    /* background: tomato; */
     padding: 0 4rem;
     /* z-index: 1; */
 
@@ -218,7 +220,7 @@ button:focus {
     margin-top: 1rem;
     position: relative;
     /* left: -1.8rem; */
-    /* z-index: 1; */
+    z-index: 1;   /* 이거 추가했음 수정하기 */
     display: none;   /* 숨기기 */
 }
 
@@ -291,7 +293,7 @@ button:focus {
     float: left;
 }
 
-.mobile_menu .m_members_Box .m_menu_2 img{
+.mobile_menu .m_members_Box .m_menu_2 img {
     width: 3.2rem;
     height: 4.07rem;
     margin-right: 2.5rem;
@@ -390,28 +392,30 @@ button:focus {
 
 .middle_content {
     max-width: 990px;
-    top: 3rem;
 }
 
 .middle_content .main__IMG_here img{
     display: none;
+    margin-top: 0px;
+    position: static;
 }
 
 
 .middle_content .main__IMG_here img.mobile_main_center {
     display: block;
-    width: 100%;
+    padding-top: 130px;
+    clear: both;
 }
 
 
-.middle_content .main__IMG_here h1{     /* 메인이미지 텍스트 */
-    top: 47%;
-
+.middle_content .main__IMG_here p{     /* 메인이미지 텍스트 */
+    top: 55%;
     font-size: 2rem;
 }
 
 .middle_content .search__Box__wrap {      /* 검색 부분 */
     width: 70rem;
+    
     margin-bottom: 5vw;
 }
 
@@ -444,7 +448,7 @@ button:focus {
     
 }
 
-.search__Box__wrap .search__Box__middle a {
+.search__Box__wrap .search__Box__middle > a {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -463,11 +467,254 @@ button:focus {
     right: 90px;
     top: -40px;
     height: 25px;
-
     display: block;
-    
-   
 }
 
 
 
+
+
+
+
+/***************** 퀵메뉴 *********************/
+
+
+.quick_menu_wrap {
+    max-width: 990px;
+    padding-top: 2rem;
+
+}
+
+.quick_menu_wrap .quick_menu {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.quick_menu_wrap .quick_menu .quick_menu_ul {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .quick_ico_wrap {
+    /* width: 100px;
+    height: 100px; */
+    flex: 20%;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(102, 102, 102);
+    border-radius: 20px 0 20px 0;
+    margin: 1rem 1.2rem;
+    box-shadow: 7px 7px 5px #7e7d7d;
+}
+
+.quick_menu_wrap .quick_menu .quick_menu_ul .quick_ico_wrap:nth-child(8) {
+    margin-right: 12px;
+}
+
+@media(max-width:760px) {     
+
+    .quick_menu_wrap .quick_menu .quick_menu_ul .quick_ico_wrap img {
+        width: 76px;
+        height: 70px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+}
+
+
+
+@media(max-width:740px) {     /* 1300이하 로그인 회원가입 상단 배치 */
+  
+
+
+    .middle_content .search__Box__wrap {      /* 검색 부분 */
+        width: 600px;
+     
+    }
+
+
+    
+    .search__Box__wrap .search__Box__middle input {   /* 검색창 */
+        width: 500px;
+    }
+    
+    
+    .search__Box__wrap .search__Box__middle button {      /* 다국어 입력하기 버튼 */
+        right: 90px;
+    }
+
+
+}
+
+
+@media(max-width:640px) {     /* 1300이하 로그인 회원가입 상단 배치 */
+  
+
+
+    .middle_content .search__Box__wrap {      /* 검색 부분 */
+        width: 450px;
+    }
+
+
+    
+    .search__Box__wrap .search__Box__middle input {   /* 검색창 */
+        width: 350px;
+        
+    }
+    
+    
+    .search__Box__wrap .search__Box__middle button {      /* 다국어 입력하기 버튼 */
+        right: 90px;
+    }
+
+}
+
+
+
+/******************* 메인 컨텐츠 시작 ********************/
+
+
+.inner__contents_wrap .content_1st h3 {
+    margin-bottom: 40px;
+}
+
+
+.content_1st .news {
+    display: block;
+
+}
+
+.content_1st .news .txt {
+    padding: 3rem;
+}
+
+.inner__contents_wrap {
+    position: absolute;
+    margin-top: 33rem;
+}
+
+
+.content_1st .news .newsIMG {
+    flex-basis: auto;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.content_1st .news .newsIMG .newsIMG_ul img{
+    width: 28rem;
+    height: 15rem;
+}
+
+
+
+
+.content_2st .youtube_link iframe {
+    padding: 215px 238px 0 50px;
+}
+
+
+.content_2st .youtube_link .bookTxt {
+    top: 37%;
+
+}
+
+
+
+
+
+.content_3st .education .silde_wrapper img {
+    width: 230px;
+    height: 350px;
+
+}
+
+.content_3st .education .silde_wrapper {
+    width: 730px;
+    height: 500px;
+    margin-left: 2.5rem;
+}
+
+.content_3st .education .silde_wrapper .slides li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
+
+@media(max-width:788px) {  
+
+    .content_3st .education h3 {
+        margin-bottom: 1rem;
+    }
+    .content_3st .education .silde_wrapper img {
+        width: 350px;
+        height: 470px;
+
+    }
+
+    .content_3st .education .silde_wrapper {
+        width: 370px;
+        height: 500px;
+    }
+
+    .content_3st .education .silde_wrapper .slides li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+
+    .content_3st .education .controls {
+        top: 15rem;
+    }
+    
+
+}
+
+
+
+
+
+
+/* 맞춤서비스 */
+.content_4st .service {
+    display: block;
+}
+
+
+.content_4st .txt {
+    display: flex;
+    margin: 40px ;
+}
+
+
+
+.content_4st .txt h3 {
+    margin-right: 50px;
+    margin-bottom: -2rem 
+} 
+
+
+
+.content_4st .service_menu {
+    margin-top: 0px;
+    padding: 0 5rem;
+}
+
+
+
+@media(max-width:741px) {
+    .content_4st .service_menu {
+        display: block;
+        /* line-height: 3.5;
+        font-size: 17px;
+        margin-top: 30px;
+        flex-basis: 100%;
+        font-weight: bold; */
+    }
+}  

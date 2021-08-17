@@ -1,0 +1,473 @@
+/*  990이하 화면 */
+
+button,
+button:focus {
+    cursor: pointer;
+}
+
+.Mmenu__nav,
+.Mmenu__nav:focus{
+    cursor: pointer;
+}
+
+.contents {
+    max-width: 990px;
+    font-size: 1.6rem;
+}
+
+
+.gnb_area .util {
+    display: none;
+}
+
+.gnb_area .util .util_link > li {
+    display: none;
+}
+
+.gnb .gnb__header, .nav , .link_list {
+    display: none;
+}
+
+
+
+/**** 반응형 헤더 시작 ****/
+.gnb .mobile__start {
+    display: block;
+    width: 100%;
+}
+
+.gnb .m__header {
+    width: 100%;
+    /* height: 16rem; */
+    padding: 0 4rem;
+    box-sizing: border-box;
+}
+
+
+.gnb a {
+    display: block;
+    height: 100%;
+}
+
+
+
+.gnb .m__logo {
+    background: url(../img/국립중앙도서관_본부-병기형-가로조합_중.png) no-repeat;
+    width: 274px;
+    height: 70px;
+    float: left;
+    text-indent: -9999px;
+    margin: 3rem 0;
+
+}
+
+
+.mobile__start .mobile__button {   /* 우측으로 정렬 */
+    margin-top: 2.5em;
+    float: right;     /* 돋보기랑 햄버거버튼 높이 지정 */
+    /* clear: both;  이거 쓰면 정렬 흐트러짐*/
+}
+
+.mobile__start .mobile_ico_search {  /* 버튼 나란히 배열 */
+    float: left;
+}
+
+
+
+.mobile__start .button_search {   /* 돋보기 버튼 생성 */
+    background: url(../img/m_searching_중.png) no-repeat;
+    width: 50px;
+    height: 44px;
+    margin-right: 1rem;
+}
+
+.mobile__start .mobile_ico_menu {   /* 버튼 나란히 배열 */
+    float: left;
+}
+
+
+.mobile__start .button_menu {   /* 햄버거 버튼 생성 */
+    background: url(../img/m_menu_중.png);
+    width: 50px;
+    height: 44px;
+}
+
+
+
+
+ /*********** 우측 돋보기 시작 ***********/
+.mobile_search {  
+    background: url(../img/mobile_search_bg.jpg) no-repeat;
+    max-width: 100%;
+    position: relative;
+    padding-bottom: 500px;
+    height: 17rem;
+
+}
+
+
+.mobile_search .mobil_search__header > h1 {    /* 우측 돋보기 내부 */
+    background: url(../img/국립중앙도서관_본부-병기형-가로조합.png) no-repeat;
+
+    width: 30.7rem;
+    height: 11.2rem;
+
+    text-indent: -9999px; 
+    margin: 15px;
+    float: left;
+    position: absolute;
+}
+
+
+.mobile_search .mobil_search__header .m_cancle {     /* 닫기 버튼 */
+    background: url(../img/cancle.png) no-repeat center;
+    width: 3.1rem;
+    height: 3.1rem;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+}
+
+
+.mobile_search .mobile_seachingBox {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+}
+
+
+
+
+.mobile_search .mobile_seachingBox > input {
+    width: 420px;
+    height: 51px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+.mobile_inner_search .mobile_seachingBox .mobile_search_btn {
+    width: 61px;
+    height: 52px;
+    background: rgb(67, 59, 187);
+    color: white;
+    margin-bottom: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+@media(max-width:686px) {     /* 1300이하 로그인 회원가입 상단 배치 */
+
+    .mobile_search .mobile_seachingBox {
+        left: 18%;
+    }
+
+    .mobile_search .mobile_seachingBox > input {
+        width: 280px;
+    }
+}
+ /*********** 우측 돋보기 끝 ***********/
+
+
+
+
+
+ /****** 우측 햄버거 버튼 시작 ******/
+.mobile_menu {    /* 햄버거 전체 Wrap */
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    padding: 0 4rem;
+    /* z-index: 1; */
+
+}
+
+
+.mobile_menu .m_menu_topSectoion {     /* 햄버거 최상단 head wrap */
+    margin-bottom: 12.6rem;
+}
+
+
+.mobile_menu  .menu_languge {   /* 언어선택 버튼 wrap */
+    width: 20rem;
+    position: absolute;
+    top: 2rem;
+}
+
+.mobile_menu  .menu_languge button.menu_languge_btn {
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: bold;
+    left: -3rem;
+    width: 22rem;
+    background: url(../img/ico_lg_black_open_small.png) no-repeat right;
+}
+
+.mobile_menu  .menu_languge button.menu_languge_btn.active {     /* 클릭하면 화살표 바뀌는것 */
+    background: url(../img/ico_lg_black_close_small.png) no-repeat right;
+
+}
+
+.mobile_menu  .menu_languge .languge_choice {   /* 언어선택 창 */
+    background: #000;
+    margin-top: 1rem;
+    position: relative;
+    /* left: -1.8rem; */
+    /* z-index: 1; */
+    display: none;   /* 숨기기 */
+}
+
+.mobile_menu  .menu_languge .languge_choice li {    /* 언어 선택 drop창 */
+    font-size: 2.7rem;
+    text-align: center;
+    padding: 1.6rem;
+    color: rgb(170, 170, 170);
+}
+
+
+.mobile_menu  .menu_languge .languge_choice li:hover {
+    color: orangered;
+}
+
+
+
+.mobile_menu .m_menu_cancle {   /* 닫기 버튼 */
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    background: url(../img/cancle_black_big.png) no-repeat;
+    float: right;
+    margin: 2.5rem 4rem 3rem 4rem;
+}
+
+
+.mobile_menu .m_members_header {    /* 로그인 Txt 부분 */
+    width: 100%;
+    background: wheat;
+    clear: both;
+}
+
+.mobile_menu .m_members_header .m_menu_login {    /* 로그인 */
+    display: block;
+    font-size: 5.2rem;
+    float: left;
+}
+
+.mobile_menu .m_members_header .m_menu_txt {     /* 회원가입 예약하기 */
+    display: flex;
+    float: right;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 1.5rem 0 0;
+}
+
+.mobile_menu .m_members_header .m_menu_txt:nth-child(1) {
+    margin-right: 3rem;
+}
+
+.mobile_menu .m_members_Box {     /* 로그인 하단 박스 */
+    width: 90%;
+    
+    background: #f4f4f4;
+    padding: 4rem;
+    border-top: 1px solid #000;
+    margin-top: 4rem;
+
+    position: absolute;
+    top: 18.5rem;
+    /* box-sizing: border-box; */
+}
+
+
+.mobile_menu .m_members_Box img {
+    width: 4.2rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+    float: left;
+}
+
+.mobile_menu .m_members_Box .m_menu_2 img {
+    width: 3.2rem;
+    height: 4.07rem;
+    margin-right: 2.5rem;
+
+}
+
+.mobile_menu .m_members_Box li {
+    float: left;
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
+
+.mobile_menu .m_members_Box li.m_menu_last {
+    margin-bottom: 0rem;
+}
+
+.mobile_menu .m_members_Box p {
+    float: left;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/*********** 모바일 네비게이션 시작 ***********/
+.mobile_menu .m_nav {         /*wrap*/
+    clear: both;
+    position: relative;
+    top: 34rem;
+}
+
+.mobile_menu .m_nav .m_menudrop {
+    width: 100%;
+    background: wheat;
+    flex-direction: column;
+}
+
+
+.mobile_menu .m_nav .Mmenu {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+.mobile_menu .m_nav .Mmenu .Mmenu__nav {
+    width: 100%;
+    border-top: 1px solid rgb(46, 46, 46);
+}
+
+.mobile_menu .m_nav .Mmenu .st {
+    border-top: none;
+
+}
+
+
+.mobile_menu .m_nav h3 {    /* nav 메인TXT wrap */
+    font-size: 3.9rem;
+    float: left;
+    margin: 3rem 0 ;
+    font-weight: 500;
+}
+
+
+.m_nav .m_menudrop_arrow {   /* nav 전체 우측 화살표 wrap */
+    background: url(../img/ico_lg_black_close.png) no-repeat;
+    width: 3.9rem;
+    height: 2.1rem;
+    float: right;
+    margin: 5rem 2rem 0 0;
+}
+
+
+.m_nav .m_TopMenu-ul {   /* nav 한 묶음씩 wrap */
+    margin-bottom: 3rem;
+    display: none;
+}
+
+
+
+.m_nav .m_TopMenu .m_lstli {   /* nav 소메뉴  wrap */
+    clear: both;
+    margin-bottom: 3.4rem;
+    font-size: 2.7rem;
+}
+
+
+
+
+
+/*********************** 컨텐츠 시작 ************************/
+
+.middle_content {
+    max-width: 990px;
+}
+
+.middle_content .main__IMG_here img{
+    display: none;
+    top: 0;
+    padding-top: 0;
+}
+
+
+.middle_content .main__IMG_here img.mobile_main_center {
+    display: block;
+}
+
+
+.middle_content .main__IMG_here p{     /* 메인이미지 텍스트 */
+    top: 55%;
+    font-size: 2rem;
+}
+
+.middle_content .search__Box__wrap {      /* 검색 부분 */
+    width: 70rem;
+    
+    margin-bottom: 5vw;
+}
+
+
+.search__Box__wrap .search__Box__Left input {    /* 검색 상세검색 라디오버튼*/
+    vertical-align: middle;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.search__Box__wrap .search__Box__Left label {
+    margin-right: 10px;
+}
+
+.search__Box__wrap .search__inner {
+    display: block;
+}
+
+
+
+.search__Box__wrap .search__Box__middle {
+    position: relative;
+    display: block;
+}
+
+
+.search__Box__wrap .search__Box__middle input {   /* 검색창 */
+    width: 600px;
+    margin: 10px 10px;
+    
+}
+
+.search__Box__wrap .search__Box__middle > a {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    padding-top: 15px;
+    top: -25px;
+    right: 10px;
+}
+
+
+
+
+
+
+.search__Box__wrap .search__Box__middle button {      /* 다국어 입력하기 버튼 */
+    position: absolute;
+    right: 90px;
+    top: -40px;
+    height: 25px;
+
+    display: block;
+    
+   
+}
+
+
+

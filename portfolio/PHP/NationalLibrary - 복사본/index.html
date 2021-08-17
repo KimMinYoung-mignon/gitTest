@@ -1,3 +1,5 @@
+
+
 <!-- 국립중앙도서관 메인페이지 -->
 
 <!DOCTYPE html>
@@ -13,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/default.js"></script>
-
+    <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -22,28 +24,31 @@
 
             <header class="gnb_area">
                 <!-- sns부분 시작 -->
-                <div class="util">
-                    <ul class="util_link">
-                        <li><a href="#">내서재</a></li>
-                        <li><a href="#">바구니</a></li>
-                        <li><a href="#">ENGLISH</a></li>
-                        <li class="sns_btn">
-                            <ul>
-                                <li class="ico_insta">
-                                    <a href="#"><img src="img/ico_insta.png" alt=""></a>
-                                </li>
-                                <li class="ico_facebook">
-                                    <a href="#"><img src="img/ico_facebook.png" alt=""></a>
-                                </li>
-                                <li class="ico_twitter">
-                                    <a href="#"><img src="img/ico_twitter.png" alt=""></a>
-                                </li>
-                                <li class="ico_youtube">
-                                    <a href="#"><img src="img/ico_youtube.png" alt=""></a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="util_wrap">
+                    <div class="util">
+
+                        <ul class="util_link">
+                            <li><a href="#">내서재</a></li>
+                            <li><a href="#">바구니</a></li>
+                            <li><a href="#">ENGLISH</a></li>
+                            <li class="sns_btn">
+                                <ul>
+                                    <li class="ico_insta">
+                                        <a href="#"><img src="img/ico_insta.png" alt=""></a>
+                                    </li>
+                                    <li class="ico_facebook">
+                                        <a href="#"><img src="img/ico_facebook.png" alt=""></a>
+                                    </li>
+                                    <li class="ico_twitter">
+                                        <a href="#"><img src="img/ico_twitter.png" alt=""></a>
+                                    </li>
+                                    <li class="ico_youtube">
+                                        <a href="#"><img src="img/ico_youtube.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- sns부분 끝 -->
 
@@ -56,20 +61,205 @@
                         </a>
                     </div>
                     <div class="nav">
-                        <ul class="here__GNB">
-                            <li><a href="">관람 정보</a></li>
-                            <li><a href="">전시</a></li>
-                            <li><a href="">교육행사</a></li>
-                            <li><a href="">소장품</a></li>
-                            <li><a href="">학술출판</a></li>
-                            <li><a href="">소식참여</a></li>
-                            <li><a href="">도서관소개</a></li>
+                        <ul class="depth1">
+                            <li>
+                                <a href="#" class="main_title">자료 검색</a>
+                                <div class="sub_menu">
+                                    <ul class="depth2" style="display: none;">
+                                        <li>
+                                            <a href="#">소장자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">디지털자료</a>
+                                            <div class="depth3_menu">
+                                                <ul class="depth3">
+                                                    <li>
+                                                        <a href="#">디지털화 자료</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Web DB</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                         <li>
+                                            <a href="#">사서추천도서</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">종합목록</a>
+                                            <div class="depth3_menu">
+                                                <ul class="depth3">
+                                                    <li>
+                                                        <a href="#">영상자료 목록</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">국가자료 종합목록</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">한국고전적 종합목록</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">근대문학 종합목록</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">국가서지LOD</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="main_title">디지털컬렉션</a>
+                                <div class="sub_menu">
+                                    <ul class="depth2" style="display: none;">
+                                        <li>
+                                            <a href="#">책읽어주는 도서관</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">온라인전시컬렉션</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">국외도서관</a>
+                                            <div class="depth3_menu">
+                                                <ul class="depth3">
+                                                    <li>
+                                                        <a href="#">세계의 도서관</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">동아시아 디지털도서관(EADL)</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">신문아카이브</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="main_title">신청참여</a>
+                                <div class="sub_menu">
+                                    <ul class="depth2" style="display: none;">
+                                        <li>
+                                            <a href="#">도서신청</a>
+                                            <div class="depth3_menu">
+                                                <ul class="depth3">
+                                                    <li>
+                                                        <a href="#">자료신청안내</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">비치 희망도서</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">도서기증</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">교육/문화</a>
+                                            <div class="depth3_menu">
+                                                <ul class="depth3">
+                                                    <li>
+                                                        <a href="#">견학</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">예약</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">참여프로그램</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">전시</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">사회봉사안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">사서에게 물어보세요</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"  class="main_title">도서관 이용</a>
+                                <div class="sub_menu">
+                                    <ul class="depth2" style="display: none;">
+                                        <li>
+                                            <a href="#">온라인도서관</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이용안내</a>
+                                            <div class="depth3_menu">
+                                                <ul class="depth3">
+                                                    <li>
+                                                        <a href="#">본관 이용시간</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">이용증 발급</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">본관 자료실</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">디지털도서관</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">도서관 일정</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">편의시설</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료복사</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="main_title">도서관소개</a>
+                                <div class="sub_menu">
+                                    <ul class="depth2" style="display: none;">
+                                        <li>
+                                            <a href="#">인사말</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">정보공개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">도서관 소식</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">관련 기관</a>
+                                            <div class="depth3_menu">
+                                                <ul class="depth3">
+                                                    <li>
+                                                        <a href="#">도서관 협력망</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">관내사이트 안내</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="link_list">
                         <ul class="login__header">
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">회원가입</a></li>
+                            <li><a href="login/login.php">로그인</a></li>
+                            <li><a href="members/join_portfolio.php">회원가입</a></li>
                             <button><span class="hide">검색</span></button>
                         </ul>
                     </div>
@@ -338,13 +528,12 @@
                                 <a href="#">
                                     <img src="img/mainCenter3.jpg" alt="">
                                     <img src="img/200305_초록쉼터.jpg" alt="" class="mobile_main_center">
-
-                                    <h1>
+                                </a>
+                                    <!-- <h1>
                                         <span>창조적 지식문화강국을 선도하는</span>
                                         <br>
                                         <span>국립중앙도서관에 오신걸 환영합니다.</span>
-                                    </h1>
-                                </a>
+                                    </h1> -->
                             </li>
                         </ul>
                     </div>
@@ -365,25 +554,175 @@
                     </div>
                 </div>
 
+                <div class="quick_menu_wrap">
+                    <div class="quick_menu">
+                        <ul class="quick_menu_ul">
+                            <li class="quick_ico_wrap ico1">
+                                <a href="#">
+                                    <img src="img/icon_02.gif" alt="">
+                                    <p>자료 당일신청</p>
+                                </a>
+                            </li>
+
+                            <li class="quick_ico_wrap ico2">
+                                <a href="reservation/index.php">
+                                    <img src="img/icon_04.gif" alt="">
+                                    <p>도서관 방문예약</p>
+                                </a>
+                            </li>
+                            <li class="quick_ico_wrap ico3">
+                                <a href="#">
+                                    <img src="img/icon_06.gif" alt="">
+                                    <p>디지털도서관 예약</p>
+                                </a>
+                            </li>
+                            <li class="quick_ico_wrap ico4">
+                                <a href="#">
+                                    <img src="img/icon_08.gif" alt="">
+                                    <p>온라인 견학</p>
+                                </a>
+                            </li>
+
+
+                            <li class="quick_ico_wrap ico5">
+                                <a href="#">
+                                    <img src="img/icon_10.gif" alt="">
+                                    <p>이용자 교육</p>
+                                </a>
+                            </li>
+                            <li class="quick_ico_wrap ico6">
+                                <a href="#">
+                                    <img src="img/icon_12.gif" alt="">
+                                    <p>편의시설</p>
+                                </a>
+                            </li>
+                            <li class="quick_ico_wrap ico7">
+                                <a href="#">
+                                    <img src="img/icon_14.gif" alt="">
+                                    <p>찾아오시는 길</p>
+                                </a>
+                            </li>
+                            <li class="quick_ico_wrap ico8">
+                                <a href="#">
+                                    <img src="img/icon_16.gif" alt="">
+                                    <p>전체보기/설정</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+
+                <div class="inner__contents_wrap">
+                    <div class="content_1st inner_con">
+                        <div class="news">
+                            <div class="txt">
+                                <h3>소식</h3>
+                                <p>국립중앙도서관의 주요 소식과 주제별로 컬렉션을 제공합니다.</p>
+                            </div>
+                            <div class="newsIMG">
+                                <ul class="newsIMG_ul">
+                                    <li><a href="#"><img src="img/news (1).gif" alt=""></a></li>
+                                    <li><a href="#"><img src="img/news (2).gif" alt=""></a></li>
+                                    <li><a href="#"><img src="img/news7.gif" alt=""></a></li>
+                                    <li><a href="#"><img src="img/news (4).gif" alt=""></a></li>
+                                    <li><a href="#"><img src="img/news (5).gif" alt=""></a></li>
+                                    <li><a href="#"><img src="img/news (6).gif" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_2st inner_con">
+                        <div class="youtube_link">
+                           
+                            <div class="txt">
+                                <h3>도서</h3>
+                                <ul class="bookTxt">
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="txtNum">01</span>&nbsp;&nbsp;사서 추천도서</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="txtNum">02</span>&nbsp;&nbsp;신작자료</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="txtNum">03</span>&nbsp;&nbsp;책 읽어주는 도서관</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="youtube_url">
+                                <iframe  src="https://www.youtube.com/embed/CK53pek7BAM?list=PLVntQ8T9YV8ZKVxQcKQL93PQwIL0Zl-at" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- width="660" height="415" -->
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="content_3st inner_con">
+                        <div class="education">
+                            <div class="txt">
+                                <h3>신청·참여</h3>
+                                <p>도서관에서 제공하는 다양한 프로그램 및 전문 서비스를 소개합니다.</p>
+                                <p class="controls">
+                                    <a class="prev"> < Prev</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="next">Next > </a>
+                                </p>
+                            </div>
+                            <div class="silde_wrapper">
+                                
+                                <ul class="slides">
+                                    <li><img src="img/slider1.jpg" alt=""></li>
+                                    <li><img src="img/slider2.jpg" alt=""></li>
+                                    <li><img src="img/slider5.jpg" alt=""></li>
+                                    <li><img src="img/slider4.jpg" alt=""></li>
+                                    <li><img src="img/slider3.jpg" alt=""></li>
+                                    <li><img src="img/slider6.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_4st inner_con">
+                        <div class="service">
+                            <div class="txt">
+                                <h3>맞춤<br>서비스</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;일반 이용자</a></li>
+                                    <li><a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                                        &nbsp;사서 연구자</a></li>
+                                    <li><a href="#"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;출판사</a></li>
+                                </ul>
+                            </div>
+                            <div class="service_menu">
+                                <ul class="service_menu_left">
+                                    <li>• <a href="#">국가자료종합목록</a></li>
+                                    <li>• <a href="#">도서관 정보 나루</a></li>
+                                    <li>• <a href="#">인문열차, 삶을 달리다</a></li>
+                                    <li>• <a href="#">한국고전적 종합 목록시스템</a></li>
+                                </ul>
+                                <ul class="service_menu_mid">
+                                    <li>• <a href="#">국가전자 도서관</a></li>
+                                    <li>• <a href="#">북한자료센터</a></li>
+                                    <li>• <a href="#">책바다(국가상호대차)</a></li>
+                                    <li>• <a href="#">ISNI-KOREA</a></li>
+                                </ul>
+                                <ul class="service_menu_right">
+                                    <li>• <a href="#">대한민국신문아카이브</a></li>
+                                    <li>• <a href="#">웹자원검색(OASIS)</a></li>
+                                    <li>• <a href="#">책이음</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-                <div clss="quick__btn"></div>
-                <div class="inner__contents"></div>
             </div>
 
 
