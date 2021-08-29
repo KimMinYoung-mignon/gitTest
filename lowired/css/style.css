@@ -1,0 +1,365 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+
+:root {
+    /* color */
+    --main-contents-color: #f2f5f8;
+    --main-blue: #1e2f43;   /*메인 컬러 남색*/
+    --main-red: #c0351f;   /*메인 컬러 빨강*/
+    --gray1-color: #666666;    /*메인 푸터 폰트 컬러*/
+
+    /* font-size */
+    --font-largest-no1: 48px;
+    --font-largest-no2: 43px;
+    --font-largest-no3: 40px;
+
+    --font-regular-no1: 35px;
+    --font-regular-no2: 28px;
+    --font-regular-no3: 25px;
+    --font-regular-no4: 20px;
+
+    --font-small-no1: 15px;
+    --font-small-no2: 13px;
+
+}
+
+
+/* 레이아웃 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-y: scroll;
+}
+
+.wrap {
+    width: 100%;
+}
+
+
+/* 해더 시작 */
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+}
+
+.header img {
+    display: block;
+    width: 255px;
+    float: left;
+    margin: 16px;
+}
+
+.header .nav_service {
+    float: left;
+    display: flex;
+}
+
+.header .nav_members {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header .nav_service li,
+.header .nav_members li {
+    padding: 15px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+
+}
+
+
+/* 안됨 다시해보기 */
+.header ul li a {
+    font-size: 14px;  /*왜안돼*/
+    color: white;
+}
+
+
+
+
+
+.contents_start {   
+    width: 1440px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -1000;
+}
+
+.contents_start > img {
+    width: 100%;
+}
+
+.contents_start > p {
+    width: 1040px;
+    height: 100px;
+    position: absolute;
+    left: 17%;
+    top: 43%;
+    text-align: center;
+    color: white;
+    font-size: 32px;     /*var로 바꾸기*/
+    line-height: 2;
+}
+
+
+
+
+/* 컨텐츠 시작 */
+.contents {
+    width: 100%;
+    position: absolute;
+    top: 95%;
+}
+
+
+
+/************** 1번 컨텐츠 시작 **************/
+.contents .content__1 {
+    background: #f2f5f8;
+    text-align: center;
+    padding-bottom:  190px;
+}
+
+.contents .content__1 h2 {     /*AI판결 바로가기*/
+    padding: 80px 80px 70px 80px;
+    font-size: 42px;
+}
+
+.contents .content__1 ul {
+    width: 100%;
+}
+
+.contents .content__1 button {
+    width: 350px;
+    height: 105px;
+    font-size: 30px;
+    border: 4px solid black;
+    background: white;
+}
+
+.contents .content__1 button:hover {
+    background: #1e2f43;
+    color: white;
+    transition: .2s;
+}
+
+button,
+button:focus {
+    cursor: pointer;
+}
+
+.contents .content__1 li{
+    float: left;
+    margin-right: 30px;
+}
+
+.contents .content__1 li:nth-child(1) {
+    margin-left:  165px;
+
+}
+
+.contents .content__1 li:nth-child(3) {
+    margin-right: 0;
+
+}
+
+
+.contents .content__1 li a{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/************** 2번 컨텐츠 시작 **************/
+.contents .content__2 {
+    max-width: 1440px;
+}
+
+/*  */
+
+.contents .content__2  h2{
+    padding: 150px 80px 80px 80px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.contents .content__2 .ipad {   /*아이패드 이미지*/
+    width: 473px;
+    float: left;
+    margin-left: 250px;
+
+}
+
+.contents .content__2 .con2__txt {
+    float: left;
+    width: 400px;
+    margin-top: 150px;
+    margin-left: 100px;
+
+}
+
+.contents .content__2 ul {
+    /* background: darkcyan; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+
+.contents .content__2 .con2_text_1 img{
+    width: 250px;
+    margin: 30px 30px 100px 30px;
+
+}
+
+
+
+
+
+/* 
+.contents .content__2 ul {
+    width: 300px;
+    float: left;
+    background: lemonchiffon;
+
+}
+
+.contents .content__2 li {
+    width: 130px;
+    text-align: center;
+    background: chocolate;
+}
+
+.contents .content__2 .con2_total img {
+    vertical-align: middle;
+    width: 110px;
+    clear: both;
+} */
+
+/* .contents .content__2 .con2_1 img {
+    width: 110px;
+}
+ */
+
+
+
+
+
+
+
+
+/************** 3번 컨텐츠 시작 **************/
+
+.content__3 {
+    width: 100%;
+    position: absolute;
+    top: 115%;
+    border-top: 2px solid #d0d0d0;
+}
+
+.content__3 > p {
+    float: left;
+    font-size: 30px;
+    margin: 200px 50px 110px 110px;
+}
+
+.content__3 img {
+    width: 700px;
+    margin: 170px 70px 70px 0px ;
+    float: left;
+
+}
+
+
+
+
+
+/************** 4번 로이어드 요금안내 시작 **************/
+
+.content__4 {
+    position: absolute;
+    top: 180%;
+    background: #f2f5f8;    
+    width: 100%;
+}
+
+
+.content__4 h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.content__4 ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content__4 .content4__box {
+    float: left;
+    width: 30%;
+    height: 350px;
+    border: 1px solid black;
+    margin: 40px 20px;
+    text-align: center;
+    background: white;
+}
+
+
+.content__4 .content4__innerbox {
+    margin: 30px;
+    width: 350px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.content__4 .content4__innerbox p {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.content__4  button {
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    top: 420px;
+    transform: translateX(-150px);
+    background: white;
+    
+
+}
+
+/************** 5번 컨텐츠 시작 **************/
+.content__5 {
+    background: lightblue;
+    position: absolute;
+    top: 220%;
+}
+
+
+.footer {
+    position: absolute;
+    top: 260%;
+    background: #1e2f43;
+}

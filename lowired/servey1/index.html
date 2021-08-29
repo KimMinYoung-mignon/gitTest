@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로이어드 AI판결 step1</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="innerWrap">
+            <div class="header">
+                <div class="logo">
+                    <img src="img/logo.png"></img>
+                </div>
+                <div class="menu">
+                    <a href="#"> ＜ 메인으로</a>
+                    <a href="#">AI형량이란? ＞ </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="contents_index">
+                    <ul>
+                        <li>1. 사건 기본 정보</li>
+                        <li>2. 당사자 정보</li>
+                        <li>3. 행위 정보</li>
+                        <li>4. 양형 정보</li>
+                    </ul>
+                </div>
+                <div class="survey">
+                    <form action="servey_1.php">
+                        <fieldset>
+                            <p>
+                                <label for="date">사건 발생일</label>
+                                <input type="date" name="date" id="date" class="date">
+                            </p>
+                            <p>
+                                <label for="law">관할법원</label>
+                                <select name="law" id="">
+                                    <option value="선택">선택해주세요.</option>
+                                    <option value="서울">서울중앙법원</option>
+                                    <option value="부산">부산지방법원</option>
+                                    <option value="충북">충북지방법원</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="">변호인 정보</label>
+                                <select name="lawier" id="">
+                                    <option value="선택">선택해주세요</option>
+                                    <option value="국선">국선변호사</option>
+                                </select>
+                            </p>
+                            <p>
+                                <button type="next" class="btn_next">다음</button>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
