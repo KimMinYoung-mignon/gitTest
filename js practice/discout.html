@@ -1,0 +1,50 @@
+<!-- 할인율 계산하기  -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할인율 계산하기</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <!-- label의 for과 input의 id가 동일해야 클릭 범위가 넓어진다 -->
+            <label for="originalPrice">원래가격</label>
+            <input type="text" id="originalPrice">원
+        </li>
+        <li>
+            <label for="rate">할인율</label>
+            <input type="text" id="rate">%
+        </li>
+        <li>
+            <button onclick="showPrice()">할인 가격 계산하기</button>
+        </li>
+    </ul>
+    
+    <!-- 여기로 결과가 뜨게 하기 -->
+    <div id="showResult"></div>
+
+    <script>
+        
+        function showPrice() {
+            // 사용자가 입력한 값을 두개의 변수에 저장함
+            let oprice = document.getElementById('originalPrice').value;
+            let rate = document.getElementById('rate').value;
+
+            // let ratePrice = rate * (1/100); 이거 쓸필요없이 40행처럼 하기
+            // originalPrice * ratePrice;
+
+            // 두 개의 값이 음수가 아니라면 실행해라
+            if( oprice > 0 && rate > 0) {
+                var savePrice = oprice * (rate/100);
+                var resultPrice = oprice - savePrice;
+            };
+
+            document.querySelector('#showResult').innerHTML = "상품의 원래 가격은" + oprice + "이고, " + "할인율은 " + rate + "% 입니다. "+ "따라서 절약한 금액은" + savePrice + "이고, 총 지불할 금액은 " + resultPrice +"원 입니다.";
+        }
+
+    </script>
+</body>
+</html>
