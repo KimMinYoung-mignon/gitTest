@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#wrap {
+    width: 100%;
+}
+.menu-wrap {
+    background: palegoldenrod;
+    width: 10%;
+    height: 100vh;
+    /* flex-basis: 0; */
+}
