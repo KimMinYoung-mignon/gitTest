@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#wrap {
+    width: 100%;
+}
+.menu-wrap {
+    background: palegoldenrod;
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+}
+#contents-wrap {
+    background: yellow;
+    width: 90%;
+    /* flex-basis: 0; */
+    position: absolute;
+    left: 10%;
+}
+.content-01-img {
+    background-size: cover;
+    display: inline-block;
+}
+
+/* .mainIMG-01 {
+    background-image: url(../image/chairs-g69f433774_1920.jpg);
+} */
